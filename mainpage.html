@@ -1,0 +1,1000 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="https://atfd.learnfirefighting.org/theme/standard/styles.php" />
+<link rel="stylesheet" type="text/css" href="https://atfd.learnfirefighting.org/theme/fandango/styles.php" />
+<meta name="description" content=" Adjala-Tosorontio Fire Department " />
+<!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="https://atfd.learnfirefighting.org/theme/standard/styles_ie7.css" />
+<![endif]-->
+<!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="https://atfd.learnfirefighting.org/theme/standard/styles_ie6.css" />
+<![endif]-->
+<meta name="keywords" content="moodle, Adjala-Tosorontio " />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Adjala-Tosorontio</title>
+<link rel="shortcut icon" href="https://atfd.learnfirefighting.org/theme/fandango/favicon.ico" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+<script type="text/javascript" src="https://atfd.learnfirefighting.org/lib/javascript-static.js"></script>
+<script type="text/javascript" src="https://atfd.learnfirefighting.org/lib/javascript-mod.php"></script>
+<script type="text/javascript" src="https://atfd.learnfirefighting.org/lib/overlib/overlib.js"></script>
+<script type="text/javascript" src="https://atfd.learnfirefighting.org/lib/overlib/overlib_cssstyle.js"></script>
+<script type="text/javascript" src="https://atfd.learnfirefighting.org/lib/cookies.js"></script>
+<script type="text/javascript" src="https://atfd.learnfirefighting.org/lib/ufo.js"></script>
+<script type="text/javascript" src="https://atfd.learnfirefighting.org/lib/dropdown.js"></script>
+<script type="text/javascript" defer="defer">
+//<![CDATA[
+setTimeout('fix_column_widths()', 20);
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+function openpopup(url, name, options, fullscreen) {
+    var fullurl = "https://atfd.learnfirefighting.org" + url;
+    var windowobj = window.open(fullurl, name, options);
+    if (!windowobj) {
+        return true;
+    }
+    if (fullscreen) {
+        windowobj.moveTo(0, 0);
+        windowobj.resizeTo(screen.availWidth, screen.availHeight);
+    }
+    windowobj.focus();
+    return false;
+}
+
+function uncheckall() {
+    var inputs = document.getElementsByTagName('input');
+    for(var i = 0; i < inputs.length; i++) {
+        inputs[i].checked = false;
+    }
+}
+
+function checkall() {
+    var inputs = document.getElementsByTagName('input');
+    for(var i = 0; i < inputs.length; i++) {
+        inputs[i].checked = true;
+    }
+}
+
+function inserttext(text) {
+  text = ' ' + text + ' ';
+  if ( opener.document.forms['theform'].message.createTextRange && opener.document.forms['theform'].message.caretPos) {
+    var caretPos = opener.document.forms['theform'].message.caretPos;
+    caretPos.text = caretPos.text.charAt(caretPos.text.length - 1) == ' ' ? text + ' ' : text;
+  } else {
+    opener.document.forms['theform'].message.value  += text;
+  }
+  opener.document.forms['theform'].message.focus();
+}
+
+function getElementsByClassName(oElm, strTagName, oClassNames){
+	var arrElements = (strTagName == "*" && oElm.all)? oElm.all : oElm.getElementsByTagName(strTagName);
+	var arrReturnElements = new Array();
+	var arrRegExpClassNames = new Array();
+	if(typeof oClassNames == "object"){
+		for(var i=0; i<oClassNames.length; i++){
+			arrRegExpClassNames.push(new RegExp("(^|\\s)" + oClassNames[i].replace(/\-/g, "\\-") + "(\\s|$)"));
+		}
+	}
+	else{
+		arrRegExpClassNames.push(new RegExp("(^|\\s)" + oClassNames.replace(/\-/g, "\\-") + "(\\s|$)"));
+	}
+	var oElement;
+	var bMatchesAll;
+	for(var j=0; j<arrElements.length; j++){
+		oElement = arrElements[j];
+		bMatchesAll = true;
+		for(var k=0; k<arrRegExpClassNames.length; k++){
+			if(!arrRegExpClassNames[k].test(oElement.className)){
+				bMatchesAll = false;
+				break;
+			}
+		}
+		if(bMatchesAll){
+			arrReturnElements.push(oElement);
+		}
+	}
+	return (arrReturnElements)
+}
+//]]>
+</script>
+<!--[if lt IE 9]>
+    <script>
+		  document.createElement('header');
+		  document.createElement('nav');
+		  document.createElement('section');
+		  document.createElement('article');
+		  document.createElement('aside');
+		  document.createElement('footer');
+    </script>
+	<link type="text/css" href="https://atfd.learnfirefighting.org/theme/fandango/layout_ie8.css" rel="stylesheet" />
+	<![endif]-->
+<link type="text/css" href="https://atfd.learnfirefighting.org/css/custom-theme/jquery-ui-1.8.18.custom.css" rel="stylesheet" />
+<link type="text/css" rel="stylesheet" href="https://atfd.learnfirefighting.org/fontawesome/css/fontawesome.css" />
+<link type="text/css" rel="stylesheet" href="https://atfd.learnfirefighting.org/fontawesome/css/brands.css" />
+<link type="text/css" rel="stylesheet" href="https://atfd.learnfirefighting.org/fontawesome/css/solid.css" />
+<link type="text/css" rel="stylesheet" href="https://atfd.learnfirefighting.org/css/font-awesome/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://atfd.learnfirefighting.org/css/styles.css" />
+<script type="text/javascript" src="https://atfd.learnfirefighting.org/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="https://atfd.learnfirefighting.org/js/jquery-ui-1.8.18.custom.min.js"></script>
+
+</head>
+<body class="course course-1 dir-ltr lang-en_utf8" id="site-index">
+<div id="page">
+<a class="skip" href="#maincontent">Skip to main content</a>
+<div id="header-home" class=" clearfix"> <h1 class="headermain"></h1>
+<div class="headermenu"><div class="logininfo">You are logged in as <a href="https://atfd.learnfirefighting.org/user/view.php?id=339&amp;course=1">Joshua Bricknell</a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://atfd.learnfirefighting.org/login/logout.php?sesskey=8MVDLt1WIf"><i class="fa fa-sign-out"></i></a></div></div>
+<div id="socialmedia">
+<p id="socialicons">
+</p>
+</div>
+</div> 
+<div id="content" class=" clearfix">
+<div id="layout-table" summary="layout">
+<div id="inner-left3"><section id="middle-column" class="middle-section3"><span id="maincontent"></span><div><div class="generalbox sitetopic box"><div style="text-align: center;"><b><font size="5"><font color="#0066cc">Adjala-Tosorontio Fire Department</font></font></b></div><div style="text-align: center;"><b><font size="5"><br/></font></b></div><div style="text-align: center;"><a href="https://atfd.learnfirefighting.org/course/view.php?id=603" title="News"><img width="80" vspace="0" hspace="0" height="80" border="0" src="https://atfd.learnfirefighting.org/file.php/1/b_News.png" alt="News" title="News" /></a> <a href="https://atfd.learnfirefighting.org/course/view.php?id=604" title="Fire Administration"><img width="80" vspace="0" hspace="0" height="80" border="0" src="https://atfd.learnfirefighting.org/file.php/1/b_Files.png" alt="Administrative Files" title="Administrative Files" /></a> <a href="https://atfd.learnfirefighting.org/course/view.php?id=605" title="Training Resources"><img width="80" vspace="0" hspace="0" height="80" border="0" src="https://atfd.learnfirefighting.org/file.php/1/b_Training.png" alt="Training Resources" title="Training Resources" /></a> <a href="https://atfd.learnfirefighting.org/course/view.php?id=606" title="Heath and Safety"><img width="80" vspace="0" hspace="0" height="80" border="0" src="https://atfd.learnfirefighting.org/file.php/1/b_HS.png" alt="Health and Safety" title="Health and Safety" /></a><br/></div>
+<ul class="section img-text">
+</ul>
+</div><div id="outstanding_wrapper"><h2 id="outstanding_header">Outstanding Reviews</h2><div id="outertracker"><table width="100%" cellpadding="5" cellspacing="1" class="generaltable boxaligncenter">
+<tr><th style="vertical-align:top; text-align:left;;white-space:nowrap;" class="header c0" scope="col">Resource Name</th><th style="vertical-align:top; text-align:left;;white-space:nowrap;" class="header c1" scope="col">Course Name</th><th style="vertical-align:top; text-align:center;;white-space:nowrap;" class="header c2" scope="col">Course Code</th><th style="vertical-align:top; text-align:center;;white-space:nowrap;" class="header c3 lastcol" scope="col">Action</th></tr>
+<tr class="r0 ">
+<td style=" text-align:left;" class="cell c0"><a class="readbuttonname" data-id="17617" data-mod="resource">Workplace Harassment Policy</a></td><td style=" text-align:left;" class="cell c1">Memos to be Read</td><td style=" text-align:center;" class="cell c2"><div style="text-align:center"><a href="https://atfd.learnfirefighting.org/course/view.php?id=602" ">MEMO</a></div></td><td style=" text-align:center;" class="cell c3 lastcol"><div style="text-align:center"><a class="readbutton" data-id="17617" data-mod="resource">Read</a></div></td></tr>
+<tr class="r1 ">
+<td style=" text-align:left;" class="cell c0"><a class="readbuttonname" data-id="17618" data-mod="resource">Workplace Violence Policy Updated</a></td><td style=" text-align:left;" class="cell c1">Memos to be Read</td><td style=" text-align:center;" class="cell c2"><div style="text-align:center"><a href="https://atfd.learnfirefighting.org/course/view.php?id=602" ">MEMO</a></div></td><td style=" text-align:center;" class="cell c3 lastcol"><div style="text-align:center"><a class="readbutton" data-id="17618" data-mod="resource">Read</a></div></td></tr>
+<tr class="r0 ">
+<td style=" text-align:left;" class="cell c0"><a class="readbuttonname" data-id="12765" data-mod="resource">Section 21 GN 6-11 Rapid Intervention Teams</a></td><td style=" text-align:left;" class="cell c1">CH 09 Structural Search, Victim Removal<br>
+& Firefighter Survival</td><td style=" text-align:center;" class="cell c2"><div style="text-align:center"><a href="https://atfd.learnfirefighting.org/course/view.php?id=504" ">CH 09</a></div></td><td style=" text-align:center;" class="cell c3 lastcol"><div style="text-align:center"><a class="myBtn" data-id="2300">Acknowledge</a></div></td></tr>
+<tr class="r1 ">
+<td style=" text-align:left;" class="cell c0"><a class="readbuttonname" data-id="12766" data-mod="resource">Section 21 GN 6-24 Building Collapse During Fire Situations</a></td><td style=" text-align:left;" class="cell c1">CH 09 Structural Search, Victim Removal<br>
+& Firefighter Survival</td><td style=" text-align:center;" class="cell c2"><div style="text-align:center"><a href="https://atfd.learnfirefighting.org/course/view.php?id=504" ">CH 09</a></div></td><td style=" text-align:center;" class="cell c3 lastcol"><div style="text-align:center"><a class="readbutton" data-id="12766" data-mod="resource">Read</a></div></td></tr>
+<tr class="r0  lastrow">
+<td style=" text-align:left;" class="cell c0"><a class="readbuttonname" data-id="12767" data-mod="resource">Section 21 GN 7-04 Firefighter Survival and Self Rescue Training</a></td><td style=" text-align:left;" class="cell c1">CH 09 Structural Search, Victim Removal<br>
+& Firefighter Survival</td><td style=" text-align:center;" class="cell c2"><div style="text-align:center"><a href="https://atfd.learnfirefighting.org/course/view.php?id=504" ">CH 09</a></div></td><td style=" text-align:center;" class="cell c3 lastcol"><div style="text-align:center"><a class="readbutton" data-id="12767" data-mod="resource">Read</a></div></td></tr>
+</table>
+<div style="text-align:center;"><a href="https://atfd.learnfirefighting.org/admin/report/trackerreport/index.php" title="Read more">Read more</a></div></div><div id="myModal" class="modal">
+
+<div class="modal-content">
+<span class="close">&times;</span>
+<div id="acknowledge_area"></div>
+</div>
+</div>
+<style>
+			.myBtn, .readbutton, .readbuttonname{
+				color:#004489;
+				cursor:pointer;
+			}
+			body {font-family: Arial, Helvetica, sans-serif;}
+
+			/* The Modal (background) */
+			.modal {
+			  display: none; /* Hidden by default */
+			  position: fixed; /* Stay in place */
+			  z-index: 1; /* Sit on top */
+			  padding-top: 10%; /* Location of the box */
+			  left: 0;
+			  top: 0;
+			  width: 100%; /* Full width */
+			  height: 100%; /* Full height */
+			  overflow: auto; /* Enable scroll if needed */
+			  background-color: rgb(0,0,0); /* Fallback color */
+			  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+			}
+
+			/* Modal Content */
+			.modal-content {
+			  background-color: #fefefe;
+			  margin: auto;
+			  padding: 20px;
+			  border: 1px solid #888;
+			  width: 80%;
+			}
+
+			/* The Close Button */
+			.close {
+			  color: #aaaaaa;
+			  float: right;
+			  font-size: 28px;
+			  font-weight: bold;
+			}
+
+			.close:hover,
+			.close:focus {
+			  color: #000;
+			  text-decoration: none;
+			  cursor: pointer;
+			}
+			</style> <script>
+			// Get the modal
+			var modal = document.getElementById("myModal");
+
+			// Get the button that opens the modal
+			/*var btn = document.getElementById("myBtn");*/
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks the button, open the modal 
+			function bindreadButtonClick(){
+			$(".readbutton").click(function() {
+				var existingreaddiv = $(this);
+				var rid = existingreaddiv.attr("data-id");
+				var modname = existingreaddiv.attr("data-mod");								
+				this.xhr = $.ajax({
+					method: "POST",
+					url: "getreadfrontdetail.php",
+					data: {id:$(this).attr("data-id") },
+				}).done(function(data) {	
+					var responsereadobj = JSON.parse(data);
+					if(responsereadobj.success == true){
+					   
+					   var exitingrow = existingreaddiv.parent().parent().parent();
+						existingreaddiv.parent().html('<a class="myBtn" data-id="'+responsereadobj.id+'">Acknowledge</a>');						
+						bindButtonClick();
+						this.target= modname+''+rid; 
+						return openpopup('/mod/'+modname+'/view.php?inpopup=true&id='+rid,'resource'+rid,'resizable=1,scrollbars=1,directories=1,location=1,menubar=1,toolbar=1,status=1,width=620,height=450');
+					   
+					}else{
+						alert('Something went wrong..Try Again');
+						return false;
+					}
+				});
+			});
+			
+			
+			$(".readbuttonname").click(function() {
+				var existingreadnamediv = $(this);
+				var rid = existingreadnamediv.attr("data-id");
+				var modname = existingreadnamediv.attr("data-mod");				
+				this.xhr = $.ajax({
+					method: "POST",
+					url: "getreadfrontdetail.php",
+					data: {id:$(this).attr("data-id") },
+				}).done(function(data) {	
+					var responsereadobj = JSON.parse(data);
+					if(responsereadobj.success == true){
+						if(responsereadobj.id){
+							var readbuttontd = existingreadnamediv.parent().parent().find('.readbutton');
+							if(readbuttontd){
+								readbuttontd.parent().html('<a class="myBtn" data-id="'+responsereadobj.id+'">Acknowledge</a>');
+								bindButtonClick();
+							}
+						}
+						
+						this.target= modname+''+rid; 
+						return openpopup('/mod/'+modname+'/view.php?inpopup=true&id='+rid,'resource'+rid,'resizable=1,scrollbars=1,directories=1,location=1,menubar=1,toolbar=1,status=1,width=620,height=450');
+					   
+					}else{
+						alert('Something went wrong..Try Again');
+						return false;
+					}
+				});
+			});
+			}
+			function bindButtonClick(){
+				$(".myBtn").click(function() {
+					var existingdiv = $(this);
+					this.xhr = $.ajax({
+						method: "POST",
+						url: "getrfrontdetail.php",
+						data: {rid:$(this).attr("data-id") },
+					}).done(function(data) {
+						$("#acknowledge_area").html(data);
+						$( "#acknowledge" ).click(function() {
+							var check_checkbox = $( "#acknowledge" ).attr('checked');
+							if(!check_checkbox){
+								$("#warningack").show();
+							}else{
+								$("#warningack").hide();
+							}
+						
+						});
+						
+						$( "#ack" ).click(function() {
+							var check_checkbox = $( "#acknowledge" ).attr('checked');
+							if(!check_checkbox){
+								$("#warningack").show();
+								return false;
+							}else{
+								$.ajax({
+									url: "getrfrontdetail.php?status=update&rid=" + existingdiv.attr("data-id"),
+									success: function(data) {
+										var responseobj = JSON.parse(data);
+										if(responseobj.success == true){
+											if(responseobj.trackerdata){
+												$("#outertracker").html(responseobj.trackerdata);
+											}else{
+												$("#outstanding_wrapper").html(responseobj.trackerdata);
+												$("#outstanding_wrapper").hide();
+											}
+										   
+										   modal.style.display = "none";
+										   bindButtonClick();
+										   bindreadButtonClick();
+										   return false ;
+										}else{
+											alert('Something went wrong..Try Again');
+											return false;
+										}
+									}
+								});
+							}
+						});
+						$( "#ackcancel" ).click(function() {
+							modal.style.display = "none";
+						});
+					});
+				  modal.style.display = "block";
+				});
+			}
+			
+			$(document).ready(function(){
+				bindreadButtonClick();
+				bindButtonClick();
+			});
+			
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+			  modal.style.display = "none";
+			}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+			  if (event.target == modal) {
+				modal.style.display = "none";
+			  }
+			}
+			
+			
+
+			</script>
+</div><div class="generalbox categorybox agendalist box"><h2 class="frontpageheader"><a class="training_link" onclick="return callmycourse(1);"> Training Agenda</a> &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; <u>Courses</u></h2><h2 class="frontpageheader"></h2> <script src="https://atfd.learnfirefighting.org/js/owl.carousel.js"></script>
+<link type="text/css" rel="stylesheet" href="https://atfd.learnfirefighting.org/css/owl.css" />
+<script>
+            $(document).ready(function() {
+            
+              var owl = $("#coursecategory");
+
+              owl.owlCarousel({
+              autoHeight : false,
+              items : 5, //10 items above 1000px browser width
+              itemsDesktop : [1000,3], //5 items between 1000px and 901px
+              itemsDesktopSmall : [900,3], // 3 items betweem 900px and 601px
+              itemsTablet: [600,2], //2 items between 600 and 0;
+              itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
+              afterAction: function(el){
+                //remove class active
+                this
+                .$owlItems
+                .removeClass('active')
+
+                //add class active
+                this
+                .$owlItems //owl internal $ object containing items
+                .eq(this.currentItem + 1)
+                .addClass('active')
+
+              }             
+              });              
+              owl.trigger('owl.jumpTo', 1);  
+              
+            });
+            function getcatcourse(curriculum){
+                $('#loading').show();
+                $.ajax({
+                    url: "course/getcourselist.php",
+                    type: "post",
+                    data: {curriculum: curriculum},
+                    success: function(data){
+                        $('#courselist').html(data);
+                        $('#loading').hide();
+                        $("div.active").removeClass("active"); 
+                        $('#category'+curriculum+' div').addClass('active');
+                    }
+                });
+                return false;
+            }
+            $(window).load(function() {
+				if($(".owl-controls").css("display") == 'block'){ 
+					var mainheight = $('#coursecategory').height();
+					var finalheight = mainheight - 50;                
+					$('#coursecategory .item').height(finalheight+'px');
+				}
+            });
+            </script>
+<style>
+            div#loading {
+                background: rgba(0, 0, 0, 0) url("loadingimage.gif") no-repeat scroll 0 0;
+                bottom: 0;
+                cursor: wait;
+                display: block;
+                height: 32px;
+                left: 45%;
+                position: fixed;
+                right: 0;
+                top: 40%;
+                width: 144px;
+                z-index: 10000;
+            }    
+            </style>
+<div id="coursecategory" class="owl-carousel">
+<a id="category31" onclick="return getcatcourse(31)"><div class="item"><span>NFPA 1001 - 2019 Firefighter I & II (PILOT)</span></div></a><a id="category28" onclick="return getcatcourse(28)"><div class="item active"><span>Study @ Home</span></div></a><a id="category20" onclick="return getcatcourse(20)"><div class="item"><span>Third Party Courses</span></div></a><a id="category19" onclick="return getcatcourse(19)"><div class="item"><span>Skills And Drills</span></div></a><a id="category18" onclick="return getcatcourse(18)"><div class="item"><span>OFC NFPA FF I-II</span></div></a><a id="category16" onclick="return getcatcourse(16)"><div class="item"><span>Deployment</span></div></a><a id="category17" onclick="return getcatcourse(17)"><div class="item"><span>Test Courses</span></div></a><a id="category21" onclick="return getcatcourse(21)"><div class="item"><span>NFPA Qualifications</span></div></a><a id="category22" onclick="return getcatcourse(22)"><div class="item"><span>Ontario JPR Practical Refresh</span></div></a><a id="category23" onclick="return getcatcourse(23)"><div class="item"><span>NFPA 1006: Technical Rescuer</span></div></a><a id="category24" onclick="return getcatcourse(24)"><div class="item"><span>NFPA 1021: Fire Officer</span></div></a><a id="category25" onclick="return getcatcourse(25)"><div class="item"><span>NFPA 1041: Fire Service Instructor</span></div></a><a id="category26" onclick="return getcatcourse(26)"><div class="item"><span>NFPA 1006/1670: Water Rescue</span></div></a><a id="category27" onclick="return getcatcourse(27)"><div class="item"><span>NFPA 1002: Driver/Operator</span></div></a><a id="category30" onclick="return getcatcourse(30)"><div class="item"><span>NFPA 1407: Rapid Intervention Crews</span></div></a>
+</div>
+<div id="loading" style="display: none;"></div><div id="courselist">
+<table class="categorylist"><tr><td valign="top" class="category image"><i class="fa fa-book"></i></td><td valign="top" class="category name"><a href="https://atfd.learnfirefighting.org/course/category.php?id=111">Maintenance Training</a></td><td class="category info">&nbsp;</td></tr><tr><td valign="top">&nbsp;</td><td valign="top" class="course name"><a href="https://atfd.learnfirefighting.org/course/view.php?id=964">MSA G1 SCBA Pack and Bottle Safety</a></td><td align="right" valign="top" class="course info"><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /></td></tr><tr><td valign="top">&nbsp;</td><td valign="top" class="course name"><a href="https://atfd.learnfirefighting.org/course/view.php?id=965">S6B Protective Clothing Refresh</a></td><td align="right" valign="top" class="course info"><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /><a title="Summary" href="https://atfd.learnfirefighting.org/course/info.php?id=965" onclick="this.target='courseinfo'; return openpopup('/course/info.php?id=965', 'courseinfo', 'menubar=0,location=0,scrollbars,resizable,width=500,height=400', 0);"><i class="fa fa-info-circle" style="font-size:16px;"></i></a></td></tr><tr><td valign="top">&nbsp;</td><td valign="top" class="course name"><a href="https://atfd.learnfirefighting.org/course/view.php?id=963">WHO- Emerging Respiratory Viruses - Coronavirus</a></td><td align="right" valign="top" class="course info"><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /><a title="Summary" href="https://atfd.learnfirefighting.org/course/info.php?id=963" onclick="this.target='courseinfo'; return openpopup('/course/info.php?id=963', 'courseinfo', 'menubar=0,location=0,scrollbars,resizable,width=500,height=400', 0);"><i class="fa fa-info-circle" style="font-size:16px;"></i></a></td></tr><tr><td valign="top">&nbsp;</td><td valign="top" class="course name"><a href="https://atfd.learnfirefighting.org/course/view.php?id=951">Water Mapping in Residential Structures</a></td><td align="right" valign="top" class="course info"><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /></td></tr><tr><td valign="top">&nbsp;</td><td valign="top" class="course name"><a href="https://atfd.learnfirefighting.org/course/view.php?id=952">Air Entrainment by Fire Service Hose Streams</a></td><td align="right" valign="top" class="course info"><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /></td></tr><tr><td valign="top">&nbsp;</td><td valign="top" class="course name"><a href="https://atfd.learnfirefighting.org/course/view.php?id=954">Introduction to Heat Transfer and Fire Measurements</a></td><td align="right" valign="top" class="course info"><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /></td></tr><tr><td valign="top">&nbsp;</td><td valign="top" class="course name"><a href="https://atfd.learnfirefighting.org/course/view.php?id=955">Research for the Development of More Effective Tactics</a></td><td align="right" valign="top" class="course info"><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /></td></tr><tr><td valign="top">&nbsp;</td><td valign="top" class="course name"><a href="https://atfd.learnfirefighting.org/course/view.php?id=956">Evidence-Based Approaches to Reduce Exposure Risks</a></td><td align="right" valign="top" class="course info"><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /></td></tr><tr><td valign="top">&nbsp;</td><td valign="top" class="course name"><a href="https://atfd.learnfirefighting.org/course/view.php?id=957">Cardiovascular and Chemical Exposure Risks During Training</a></td><td align="right" valign="top" class="course info"><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /></td></tr><tr><td valign="top">&nbsp;</td><td valign="top" class="course name"><a href="https://atfd.learnfirefighting.org/course/view.php?id=953">Suppression Tactics in Single-Family Homes</a></td><td align="right" valign="top" class="course info"><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /></td></tr><tr><td valign="top">&nbsp;</td><td valign="top" class="course name"><a href="https://atfd.learnfirefighting.org/course/view.php?id=949">Responding to Natural Gas Emergencies</a></td><td align="right" valign="top" class="course info"><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /><a title="Summary" href="https://atfd.learnfirefighting.org/course/info.php?id=949" onclick="this.target='courseinfo'; return openpopup('/course/info.php?id=949', 'courseinfo', 'menubar=0,location=0,scrollbars,resizable,width=500,height=400', 0);"><i class="fa fa-info-circle" style="font-size:16px;"></i></a></td></tr><tr><td valign="top">&nbsp;</td><td valign="top" class="course name"><a href="https://atfd.learnfirefighting.org/course/view.php?id=962">Radio and On-Scene Size Up</a></td><td align="right" valign="top" class="course info"><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /></td></tr><tr><td valign="top">&nbsp;</td><td valign="top" class="course name"><a href="https://atfd.learnfirefighting.org/course/view.php?id=961">Traffic - Operating on Roadways</a></td><td align="right" valign="top" class="course info"><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /></td></tr><tr><td valign="top">&nbsp;</td><td valign="top" class="course name"><a href="https://atfd.learnfirefighting.org/course/view.php?id=967">Electrical Utility Emergencies</a></td><td align="right" valign="top" class="course info"><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /></td></tr><tr><td valign="top">&nbsp;</td><td valign="top" class="course name"><a href="https://atfd.learnfirefighting.org/course/view.php?id=968">FF Role in Cause Determination</a></td><td align="right" valign="top" class="course info"><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /></td></tr><tr><td valign="top">&nbsp;</td><td valign="top" class="course name">Foam and Foam Equipment</td><td align="right" valign="top" class="course info"><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /></td></tr><tr><td valign="top">&nbsp;</td><td valign="top" class="course name">Hose Equipment and Hose Roll Review</td><td align="right" valign="top" class="course info"><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /></td></tr><tr><td valign="top">&nbsp;</td><td valign="top" class="course name"><a href="https://atfd.learnfirefighting.org/course/view.php?id=959">PPE Inspection and Cleaning</a></td><td align="right" valign="top" class="course info"><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /><img alt style="width:18px;height:16px;" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/spacer.gif" /><a title="Summary" href="https://atfd.learnfirefighting.org/course/info.php?id=959" onclick="this.target='courseinfo'; return openpopup('/course/info.php?id=959', 'courseinfo', 'menubar=0,location=0,scrollbars,resizable,width=500,height=400', 0);"><i class="fa fa-info-circle" style="font-size:16px;"></i></a></td></tr></table></div><form id="coursesearch" action="https://atfd.learnfirefighting.org/course/search.php" method="get"><fieldset class="coursesearchbox invisiblefieldset"><label for="shortsearchbox">Search by: </label>&nbsp;&nbsp;<select name="searchby"><option value="1" selected="selected">Course</option><option value="2">Standard</option></select>&nbsp;&nbsp;<input type="text" id="shortsearchbox" size="12" name="search" alt="Search courses" value /><input type="submit" value="Go" /></fieldset></form></div><br/></div></section><aside id="left-column" class="left-section3" style="float:left;"><div><a href="#sb-1" class="skip-block">Skip Good Afternoon</a><div id="inst3740" class="block_login_logout sideblock"><div class="header"><div class="title"><i class="fa fa-minus-square-o hide-show-image" id="togglehide_inst3740" onclick="elementToggleHide(this, true, function(el) {return findParentNode(el, 'DIV', 'sideblock'); }, 'Show Good Afternoon block', 'Hide Good Afternoon block'); return false;" alt="Hide Good Afternoon block" title="Hide Good Afternoon block"></i><h2>Good Afternoon</h2></div></div><div class="content"><div class="logoutusername"><a href="https://atfd.learnfirefighting.org/user/view.php?id=339&amp;course=1">Joshua Bricknell</a></div><div class="logoutuserimg"><img src="https://atfd.learnfirefighting.org/user/pix.php?file=/339/f1.jpg" width="100" height="100" alt="Imagen" /></div><form class="logoutform" id="logout" method="post" action="https://atfd.learnfirefighting.org/login/logout.php?sesskey=8MVDLt1WIf"><div class="logoutbtn"><input type="submit" value="&nbsp;&nbsp;Logout&nbsp;&nbsp;" /></div></form><div class="logoutfooter"><a href="https://atfd.learnfirefighting.org/user/edit.php?id=339&amp;course=1">Update profile</a></div></div></div><script type="text/javascript">
+//<![CDATA[
+elementCookieHide("inst3740","Show Good Afternoon block","Hide Good Afternoon block");
+//]]>
+</script><span id="sb-1" class="skip-block-to"></span>
+<script type="text/javascript" src="https://atfd.learnfirefighting.org/blocks/fn_my_menu/HTML_TreeMenu-1.2.0/TreeMenu.js"></script>
+<a href="#sb-2" class="skip-block">Skip ATFD Message Center</a><div id="inst848" class="block_fn_my_menu sideblock"><div class="header"><div class="title"><i class="fa fa-minus-square-o hide-show-image" id="togglehide_inst848" onclick="elementToggleHide(this, true, function(el) {return findParentNode(el, 'DIV', 'sideblock'); }, 'Show ATFD Message Center block', 'Hide ATFD Message Center block'); return false;" alt="Hide ATFD Message Center block" title="Hide ATFD Message Center block"></i><h2>ATFD Message Center</h2></div></div><div class="content">
+<script language="javascript" type="text/javascript">
+//<![CDATA[
+	objTreeMenu_1 = new TreeMenu("https://atfd.learnfirefighting.org/blocks/fn_my_menu/HTML_TreeMenu-1.2.0/images", "objTreeMenu_1", "_self", "treeMenuDefault", true, false);
+	 newNode = objTreeMenu_1.addItem(new TreeNode('ATFD', '../../../../blocks/fn_my_menu/icons/home.gif', 'https://atfd.learnfirefighting.org', '16', '16', true, false, 'treeMenuDefault', '', '../../../../blocks/fn_my_menu/icons/home.gif'));
+	 newNode_1 = newNode.addItem(new TreeNode(' my Messenger', '../../../..//blocks/fn_my_menu/icons/messages.gif', '" onclick="return openpopup(\'/message/index.php?course=1\', \'message\', \'menubar=0,location=0,scrollbars,status,resizable,width=400,height=500\', 0);"', '16', '16', false, true, 'treeMenuDefault', '', '../../../..//blocks/fn_my_menu/icons/messages.gif'));
+	 newNode_2 = newNode.addItem(new TreeNode(' my Profile', '../../../../pix/u/f2.png', 'https://atfd.learnfirefighting.org/user/view.php?id=339&course=1', '16', '16', false, true, 'treeMenuDefault', '', '../../../../pix/u/f2.png'));
+
+	objTreeMenu_1.drawMenu();
+	objTreeMenu_1.writeOutput();
+	objTreeMenu_1.resetBranches();
+// ]]>
+</script></div></div><script type="text/javascript">
+//<![CDATA[
+elementCookieHide("inst848","Show ATFD Message Center block","Hide ATFD Message Center block");
+//]]>
+</script><span id="sb-2" class="skip-block-to"></span><a href="#sb-3" class="skip-block">Skip TRMS 1401 Reporting</a><div id="inst3247" class="block_trms sideblock"><div class="header"><div class="title"><i class="fa fa-minus-square-o hide-show-image" id="togglehide_inst3247" onclick="elementToggleHide(this, true, function(el) {return findParentNode(el, 'DIV', 'sideblock'); }, 'Show TRMS 1401 Reporting block', 'Hide TRMS 1401 Reporting block'); return false;" alt="Hide TRMS 1401 Reporting block" title="Hide TRMS 1401 Reporting block"></i><h2>TRMS 1401 Reporting</h2></div></div><div class="content"><i class="fa fa-file-text-o"></i>&nbsp;<a title="Course Report" target="_blank" href="https://atfd.learnfirefighting.org/admin/report/coursereport/index.php">Course Report</a><br/><i class="fa fa-paw"></i>&nbsp;<a href="https://atfd.learnfirefighting.org/admin/report/trackerreport/index.php" title="Trackers Report" target="_blank">Trackers Report</a><br/><i class="fa fa-file-text-o"></i>&nbsp;<a href="https://atfd.learnfirefighting.org/admin/report/credential/index.php" title="Credential Manager" target="_blank">Credential Manager</a><br/><i class="fa fa-certificate"></i>&nbsp;<a href="https://atfd.learnfirefighting.org/admin/report/qualificationreport/index.php" title="Qualification Report" target="_blank">Qualification Report</a></div></div><script type="text/javascript">
+//<![CDATA[
+elementCookieHide("inst3247","Show TRMS 1401 Reporting block","Hide TRMS 1401 Reporting block");
+//]]>
+</script><span id="sb-3" class="skip-block-to"></span></div></aside></div><aside id="right-column" class="right-section3" style="float:right;"><div id="overDiv" style="position: absolute; visibility: hidden; z-index:1000;"></div><div><a href="#sb-4" class="skip-block">Skip Training Plan</a><div id="inst5319" class="block_calendar_month sideblock"><div class="header"><div class="title"><i class="fa fa-minus-square-o hide-show-image" id="togglehide_inst5319" onclick="elementToggleHide(this, true, function(el) {return findParentNode(el, 'DIV', 'sideblock'); }, 'Show Training Plan block', 'Hide Training Plan block'); return false;" alt="Hide Training Plan block" title="Hide Training Plan block"></i><h2>Training Plan</h2></div></div><div class="content"><div id="overDiv" style="position: absolute; visibility: hidden; z-index:1000;"></div><script type="text/javascript" src="https://atfd.learnfirefighting.org/calendar/overlib.cfg.php"></script>
+<div class="calendar-controls" id="calendar-controls-month"><a class="previous" id="monthprevious" onclick="return callmonthdata(11,2023);" title="Previous month"><span class="arrow ">&#x25C0;</span><span class="accesshide ">&nbsp;Previous month</span></a><span class="hide"> | </span><span class="current"><a href="https://atfd.learnfirefighting.org/calendar/view.php?view=month&amp;course=1&amp;cal_d=1&amp;cal_m=12&amp;cal_y=2023">December 2023</a></span><span class="hide"> | </span><a class="next" id="monthnext" onclick="return callmonthdata(1,2024);" title="Next month"><span class="accesshide ">Next month&nbsp;</span><span class="arrow ">&#x25B6;</span></a>
+<span class="clearer"><!-- --></span></div>
+<script type="text/javascript">
+            function callmonthdata(month,year){
+                $.ajax({
+                    url: "calendar/getcalendarcontrol.php",
+                    type: "post",
+                    data: {cal_m: month,cal_y:year},
+                    success: function(data){
+                        $("#calendar-controls-month").html(data);
+                    }
+                });
+                $.ajax({
+                    url: "calendar/getcalendar.php",
+                    type: "post",
+                    data: {cal_m: month,cal_y:year},
+                    success: function(data){
+                        $("#monthlycalendar").html(data);
+                    }
+                });
+                
+                $.ajax({
+                    url: "calendar/getshiftcalendarcontrol.php",
+                    type: "post",
+                    data: {cal_m: month,year:year},
+                    success: function(data){
+                        $("#calendar-controls").html(data);
+                    }
+                });
+                $.ajax({
+                    url: "calendar/getshiftcalendar.php",
+                    type: "post",
+                    data: {cal_m: month,year:year},
+                    success: function(data){
+                        $("#shiftcalendar").html(data);
+                    }
+                });
+                return false;
+            }
+            
+            </script>
+<style>
+            #monthnext, #monthprevious{
+                cursor:pointer;
+            }</style><div class="no-overflow" id="monthlycalendar"><table class="minicalendar" summary="Data table, December 2023 Training Plan"><tr class="weekdays"><th scope="col"><abbr title="Sunday">Sun</abbr></th>
+<th scope="col"><abbr title="Monday">Mon</abbr></th>
+<th scope="col"><abbr title="Tuesday">Tue</abbr></th>
+<th scope="col"><abbr title="Wednesday">Wed</abbr></th>
+<th scope="col"><abbr title="Thursday">Thu</abbr></th>
+<th scope="col"><abbr title="Friday">Fri</abbr></th>
+<th scope="col"><abbr title="Saturday">Sat</abbr></th>
+</tr><tr><td class="dayblank">&nbsp;</td>
+<td class="dayblank">&nbsp;</td>
+<td class="dayblank">&nbsp;</td>
+<td class="dayblank">&nbsp;</td>
+<td class="dayblank">&nbsp;</td>
+<td class="day">1</td>
+<td class="weekend day today eventnone"><span class="accesshide ">Today Saturday, 02 December </span><a href="#" onmouseover="return overlib('No events', CAPTION, 'Today Saturday, 02 December');" onmouseout="return nd();">2</a></td>
+</tr><tr><td class="weekend day">3</td>
+<td class="day">4</td>
+<td class="day">5</td>
+<td class="day">6</td>
+<td class="day">7</td>
+<td class="day">8</td>
+<td class="weekend day">9</td>
+</tr><tr><td class="weekend day">10</td>
+<td class="day">11</td>
+<td class="day">12</td>
+<td class="day">13</td>
+<td class="day">14</td>
+<td class="day">15</td>
+<td class="weekend day">16</td>
+</tr><tr><td class="weekend day">17</td>
+<td class="day">18</td>
+<td class="day">19</td>
+<td class="day">20</td>
+<td class="day">21</td>
+<td class="day">22</td>
+<td class="weekend day">23</td>
+</tr><tr><td class="weekend day">24</td>
+<td class="day">25</td>
+<td class="day">26</td>
+<td class="day">27</td>
+<td class="day">28</td>
+<td class="day">29</td>
+<td class="weekend day">30</td>
+</tr><tr><td class="weekend day">31</td>
+<td class="dayblank">&nbsp;</td><td class="dayblank">&nbsp;</td><td class="dayblank">&nbsp;</td><td class="dayblank">&nbsp;</td><td class="dayblank">&nbsp;</td><td class="dayblank">&nbsp;</td></tr></table></div></div></div><script type="text/javascript">
+//<![CDATA[
+elementCookieHide("inst5319","Show Training Plan block","Hide Training Plan block");
+//]]>
+</script><span id="sb-4" class="skip-block-to"></span><a href="#sb-5" class="skip-block">Skip Online Users</a><div id="inst845" class="block_online_users sideblock"><div class="header"><div class="title"><i class="fa fa-minus-square-o hide-show-image" id="togglehide_inst845" onclick="elementToggleHide(this, true, function(el) {return findParentNode(el, 'DIV', 'sideblock'); }, 'Show Online Users block', 'Hide Online Users block'); return false;" alt="Hide Online Users block" title="Hide Online Users block"></i><h2>Online Users</h2></div></div><div class="content"><div class="info">(last 30 minutes)</div><ul class="list">
+<li class="listentry"><div class="user"><a href="https://atfd.learnfirefighting.org/user/view.php?id=339&amp;course=1" title="1 sec"><img class="userpicture defaultuserpic" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/u/f2.png" height="16" width="16" title alt />Joshua Bricknell</a></div></li>
+</ul><div class="clearer"><!-- --></div></div></div><script type="text/javascript">
+//<![CDATA[
+elementCookieHide("inst845","Show Online Users block","Hide Online Users block");
+//]]>
+</script><span id="sb-5" class="skip-block-to"></span><a href="#sb-6" class="skip-block">Skip My courses</a><div id="inst5794" class="block_course_list sideblock"><div class="header"><div class="title"><i class="fa fa-minus-square-o hide-show-image" id="togglehide_inst5794" onclick="elementToggleHide(this, true, function(el) {return findParentNode(el, 'DIV', 'sideblock'); }, 'Show My courses block', 'Hide My courses block'); return false;" alt="Hide My courses block" title="Hide My courses block"></i><h2>My courses</h2></div></div><div class="content">
+<ul class="list">
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-1" href="https://atfd.learnfirefighting.org/course/view.php?id=720">001 Demonstrate Procedures for Mounting Apparatus</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-2" href="https://atfd.learnfirefighting.org/course/view.php?id=721">002 Demonstrate Procedures for Working Safety Around Apparatus</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-3" href="https://atfd.learnfirefighting.org/course/view.php?id=722">003 Demonstrate Procedures for Establishing Protected Work Areas</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-4" href="https://atfd.learnfirefighting.org/course/view.php?id=723">004 Demonstrate Initiating An Emergency Response</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-5" href="https://atfd.learnfirefighting.org/course/view.php?id=724">005 Demonstrate Procedures For Receiving A Business Phone Call</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-6" href="https://atfd.learnfirefighting.org/course/view.php?id=725">006 Demonstrate Transmitting And Receiving Radio Messages</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-7" href="https://atfd.learnfirefighting.org/course/view.php?id=726">007 Don And Doff Personal Protective Equipment</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-8" href="https://atfd.learnfirefighting.org/course/view.php?id=727">008 Don Self -Contained Breathing Apparatus</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-9" href="https://atfd.learnfirefighting.org/course/view.php?id=728">009 Demonstrate Skip Breathing</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-10" href="https://atfd.learnfirefighting.org/course/view.php?id=729">010 Enter And Exit Restricted Openings</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-11" href="https://atfd.learnfirefighting.org/course/view.php?id=730">011 Demonstrate Emergency Breathing - ByPass Valve</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-12" href="https://atfd.learnfirefighting.org/course/view.php?id=731">012 Demonstrate One- Person Cylinder Change</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-13" href="https://atfd.learnfirefighting.org/course/view.php?id=732">013 Demonstrate Two- Person Cylinder Change</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-14" href="https://atfd.learnfirefighting.org/course/view.php?id=733">014 Demonstrate A Routine SCBA Inspection</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-15" href="https://atfd.learnfirefighting.org/course/view.php?id=734">015 Demonstrate Refilling SCBA Procedures - Cascade Method</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-16" href="https://atfd.learnfirefighting.org/course/view.php?id=735">016 Demonstrate SCBA Cleaning Procedures</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-17" href="https://atfd.learnfirefighting.org/course/view.php?id=736">017 Extinguish A Class A Fire With A Portable Fire Extinguisher</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-18" href="https://atfd.learnfirefighting.org/course/view.php?id=737">018 Extinguish A Class B/C Fire With A Portable Fire Extinguisher</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-19" href="https://atfd.learnfirefighting.org/course/view.php?id=738">019 Demonstrate Tying A Bowline, Clove Hitch, And Becket</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-20" href="https://atfd.learnfirefighting.org/course/view.php?id=739">020 Demonstrate Tying A Figure Eight, Overhand Safety, And Half Hitch</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-21" href="https://atfd.learnfirefighting.org/course/view.php?id=740">021 Demonstrate Hoisting Equipment</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-22" href="https://atfd.learnfirefighting.org/course/view.php?id=741">022 Demonstrate Inspecting, Cleaning, And Storing Rope</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-23" href="https://atfd.learnfirefighting.org/course/view.php?id=742">023 Demonstrate Lifts And Carries</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-24" href="https://atfd.learnfirefighting.org/course/view.php?id=743">024 Demonstrate Mayday And Survival Procedures</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-25" href="https://atfd.learnfirefighting.org/course/view.php?id=744">025 Conduct A Search &amp; Rescue &amp; Exit A Hazardous Environment</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-26" href="https://atfd.learnfirefighting.org/course/view.php?id=745">026 Illuminate An Emergency Scene</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-27" href="https://atfd.learnfirefighting.org/course/view.php?id=746">027 Forcible Entry Tool Identification And Carries</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-28" href="https://atfd.learnfirefighting.org/course/view.php?id=747">028 Demonstrate Forcible Entry Techniques - Doors And Windows</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-29" href="https://atfd.learnfirefighting.org/course/view.php?id=748">029 Demonstrate Maintaining And Inspecting Forcible Entry Tools</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-30" href="https://atfd.learnfirefighting.org/course/view.php?id=749">030 Demonstrate One-Fire Fighter Ladder Carry</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-31" href="https://atfd.learnfirefighting.org/course/view.php?id=750">031 Demonstrate Two-Fire Fighter Ladder Carry</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-32" href="https://atfd.learnfirefighting.org/course/view.php?id=751">032 Demonstrate One-Fire Fighter Ladder Raise</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-33" href="https://atfd.learnfirefighting.org/course/view.php?id=752">033 Demonstrate Two-Fire Fighter Ladder Raise</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-34" href="https://atfd.learnfirefighting.org/course/view.php?id=753">034 Demonstrate Leg Lock And Working With A Tool</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-35" href="https://atfd.learnfirefighting.org/course/view.php?id=754">035 Demonstrate Bringing An Unconscious Victim Down A Ladder</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-36" href="https://atfd.learnfirefighting.org/course/view.php?id=755">036 Demonstrate Securing A Roof Ladder On A Pitched Roof</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-37" href="https://atfd.learnfirefighting.org/course/view.php?id=756">037 Demonstrate Cleaning A Ground Ladder</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-38" href="https://atfd.learnfirefighting.org/course/view.php?id=757">038 Demonstrate Inspecting A Ground Ladder</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-39" href="https://atfd.learnfirefighting.org/course/view.php?id=758">039 Demonstrate Negative Pressure Ventilation</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-40" href="https://atfd.learnfirefighting.org/course/view.php?id=759">040 Demonstrate Positive Pressure Ventilation</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-41" href="https://atfd.learnfirefighting.org/course/view.php?id=760">041 Demonstrate Hydraulic Ventilation</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-42" href="https://atfd.learnfirefighting.org/course/view.php?id=761">042 Demonstrate Ventilating A Roof</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-43" href="https://atfd.learnfirefighting.org/course/view.php?id=762">043 Demonstrate Operating A Hydrant</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-44" href="https://atfd.learnfirefighting.org/course/view.php?id=763">044 Demonstrate Assembling The Equipment For Drafting</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-45" href="https://atfd.learnfirefighting.org/course/view.php?id=764">045 Demonstrate The Use Of Hose Tools And Appliances</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-46" href="https://atfd.learnfirefighting.org/course/view.php?id=765">046 Demonstrate Rolling A Hose Straight Roll</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-47" href="https://atfd.learnfirefighting.org/course/view.php?id=766">047 Demonstrate Rolling A Hose Donut Roll</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-48" href="https://atfd.learnfirefighting.org/course/view.php?id=767">048 Demonstrate Rolling A Hose Double Donut Roll</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-49" href="https://atfd.learnfirefighting.org/course/view.php?id=768">049 Demonstrate Coupling And Uncoupling Hose</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-50" href="https://atfd.learnfirefighting.org/course/view.php?id=769">050 Demonstrate Loading Hose In A Flat Load</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-51" href="https://atfd.learnfirefighting.org/course/view.php?id=770">051 Demonstrate Loading Hose In An Accordion Load</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-52" href="https://atfd.learnfirefighting.org/course/view.php?id=771">052 Demonstrate The Single Section Drain And Carry</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-53" href="https://atfd.learnfirefighting.org/course/view.php?id=772">053 Demonstrate Pulling And Advancing Hose Live From A Hose Bed- Accordion Hose Load</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-54" href="https://atfd.learnfirefighting.org/course/view.php?id=773">054 Demonstrate Loading A Pre-Connected Flat Hose Load</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-55" href="https://atfd.learnfirefighting.org/course/view.php?id=774">055 Demonstrate Advancing A Pre-Connected Flat Hose Load</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-56" href="https://atfd.learnfirefighting.org/course/view.php?id=775">056 Demonstrate Loading A Pre-Connected Triple Layer Hose Load</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-57" href="https://atfd.learnfirefighting.org/course/view.php?id=776">057 Demonstrate Advancing A Pre-Connected Triple Layer Hose Load</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-58" href="https://atfd.learnfirefighting.org/course/view.php?id=778">058 Demonstrate Advancing An Uncharged Hoseline Up A Ladder</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-59" href="https://atfd.learnfirefighting.org/course/view.php?id=777">059 Demonstrate Advancing An Uncharged Hoseline Up A Stairway</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-60" href="https://atfd.learnfirefighting.org/course/view.php?id=779">060 Demonstrate Operating a 38 mm (1/2") or 45 mm (1 3/4") Hoseline</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-61" href="https://atfd.learnfirefighting.org/course/view.php?id=780">061 Demonstrate Operating a 65 mm (2 1/2") or 77 mm (3 ") Hoseline</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-62" href="https://atfd.learnfirefighting.org/course/view.php?id=781">062 Demonstrate Advancing A Charged Hoseline Up A Ladder</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-63" href="https://atfd.learnfirefighting.org/course/view.php?id=782">063 Demonstrate Advancing A Charged Hoseline Up A Stairway</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-64" href="https://atfd.learnfirefighting.org/course/view.php?id=783">064 Demonstrate Advancing A Charged Hoseline Into A Structure</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-65" href="https://atfd.learnfirefighting.org/course/view.php?id=784">065 Demonstrate Extending A Charged Hoseline</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-66" href="https://atfd.learnfirefighting.org/course/view.php?id=785">066 Demonstrate Replacing A Burst Hoseline</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-67" href="https://atfd.learnfirefighting.org/course/view.php?id=786">067 Demonstrate Cleaning And Inspecting Hose</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-68" href="https://atfd.learnfirefighting.org/course/view.php?id=787">068 Demonstrate The Operation Of A Solid Stream Nozzle</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-69" href="https://atfd.learnfirefighting.org/course/view.php?id=788">069 Demonstrate The Operation Of A Fog Stream Nozzle</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-70" href="https://atfd.learnfirefighting.org/course/view.php?id=789">070 Demonstrate The Operation Of Fire Stream From A Ladder</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-71" href="https://atfd.learnfirefighting.org/course/view.php?id=790">071 Demonstrate Inspecting Nozzles</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-72" href="https://atfd.learnfirefighting.org/course/view.php?id=791">072 Demonstrate Controlling Utility Services</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-73" href="https://atfd.learnfirefighting.org/course/view.php?id=792">073 Demonstrate Extinguishing A Passenger Vehicle Fire</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-74" href="https://atfd.learnfirefighting.org/course/view.php?id=793">074 Demonstrate Extinguishing Class A Fires</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-75" href="https://atfd.learnfirefighting.org/course/view.php?id=794">075 Demonstrate Attacking An Interior Structure Fire</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-76" href="https://atfd.learnfirefighting.org/course/view.php?id=795">076 Demonstrate Attacking A Ground Cover Fire</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-77" href="https://atfd.learnfirefighting.org/course/view.php?id=796">077 Demonstrate Salvage Cover Folds And Rolls</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-78" href="https://atfd.learnfirefighting.org/course/view.php?id=797">078 Demonstrate Deploying Salvage Covers - One-Fire Fighter Spread</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-79" href="https://atfd.learnfirefighting.org/course/view.php?id=798">079 Demonstrate Deployment Salvage Covers - Two Firefighter Spread</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-80" href="https://atfd.learnfirefighting.org/course/view.php?id=799">080 Demonstrate Constructing A Water Chute With Pike Poles</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-81" href="https://atfd.learnfirefighting.org/course/view.php?id=800">081 Demonstrate Constructing A Water Catchall</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-82" href="https://atfd.learnfirefighting.org/course/view.php?id=801">082 Demonstrate Covering Openings</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-83" href="https://atfd.learnfirefighting.org/course/view.php?id=802">083 Demonstrate Debris And Water Removal</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-84" href="https://atfd.learnfirefighting.org/course/view.php?id=803">084 Demonstrate Salvage Cover Inspection And Cleaning</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-85" href="https://atfd.learnfirefighting.org/course/view.php?id=804">085 Demonstrate Overhaul Operations</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-86" href="https://atfd.learnfirefighting.org/course/view.php?id=805">086 Demonstrate Connecting To A Fire Department Connection</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-87" href="https://atfd.learnfirefighting.org/course/view.php?id=806">087 Demonstrate Stopping The Flow From A Sprinkler Head</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-88" href="https://atfd.learnfirefighting.org/course/view.php?id=807">088 Demonstrate Body Substance Isolation (BSI) Precautions</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-89" href="https://atfd.learnfirefighting.org/course/view.php?id=808">089 Demonstrate CPR And Management Of An Obstructed Airway</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-90" href="https://atfd.learnfirefighting.org/course/view.php?id=809">090 Demonstrate A patient Assessment / Primary Survey</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-91" href="https://atfd.learnfirefighting.org/course/view.php?id=810">091 Demonstrate Controlling External Bleeding</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-2-01" href="https://atfd.learnfirefighting.org/course/view.php?id=811">2-001 Demonstrate Ordering And Transmitting Multiple Alarms</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-2-02" href="https://atfd.learnfirefighting.org/course/view.php?id=812">2-002 Demonstrate Completing And Incident Report</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-2-03" href="https://atfd.learnfirefighting.org/course/view.php?id=813">2-003 Service And Maintain Power Plants And Lighting Equipment</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-2-04" href="https://atfd.learnfirefighting.org/course/view.php?id=814">2-004 Vehicle Extrication Windshield Removal</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-2-05" href="https://atfd.learnfirefighting.org/course/view.php?id=815">2-005 Vehicle Extrication: Vehicle Door Removal</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-2-06" href="https://atfd.learnfirefighting.org/course/view.php?id=816">2-006 Vehicle Extrication: Roof Removal</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-2-07" href="https://atfd.learnfirefighting.org/course/view.php?id=817">2-007 Vehicle Extrication: Displacing A Dashboard</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-2-08" href="https://atfd.learnfirefighting.org/course/view.php?id=818">2-008 Assist Technical Rescue Teams</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-2-09" href="https://atfd.learnfirefighting.org/course/view.php?id=819">2-009 Demonstrate Selecting Equipment For Fire ground Situations</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-2-10" href="https://atfd.learnfirefighting.org/course/view.php?id=820">2-010 Demonstrate A Hose Annual Service Test</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-2-11" href="https://atfd.learnfirefighting.org/course/view.php?id=821">2-011 Demonstrate The Assembly And Operation Of a Foam Stream</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-2-12" href="https://atfd.learnfirefighting.org/course/view.php?id=822">2-012 Determines Need For Command And Organizes And Coordinates An Incident Management System</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-2-13" href="https://atfd.learnfirefighting.org/course/view.php?id=823">2-013 Demonstrate Extinguishing An Exterior Ignitable Liquid Fire</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-2-14" href="https://atfd.learnfirefighting.org/course/view.php?id=824">2-014 Demonstrate Coordinating An Interior Attack</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-2-15" href="https://atfd.learnfirefighting.org/course/view.php?id=825">2-015 Demonstrate Controlling A Flammable Gas Cylinder Fire</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-2-16" href="https://atfd.learnfirefighting.org/course/view.php?id=826">2-016 Demonstrate Locating And Protecting Fire Cause Evidence</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-2-17" href="https://atfd.learnfirefighting.org/course/view.php?id=827">2-017 Demonstrate A Private Dwelling Fire Safety Survey</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-2-18" href="https://atfd.learnfirefighting.org/course/view.php?id=828">2-018 Demonstrate A Fire Safety Presentation</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OJPR1001-2013-2-19" href="https://atfd.learnfirefighting.org/course/view.php?id=829">2-019 Demonstrate Conducting A Pre-Incident Survey</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="AAD101" href="https://atfd.learnfirefighting.org/course/view.php?id=935">Aerial Apparatus Driving</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="FSA-2" href="https://atfd.learnfirefighting.org/course/view.php?id=952">Air Entrainment by Fire Service Hose Streams</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="BMMA" href="https://atfd.learnfirefighting.org/course/view.php?id=970">Business Meeting Monthly Attendance</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CTST" href="https://atfd.learnfirefighting.org/course/view.php?id=533">Call Search Tool</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="FSA-8" href="https://atfd.learnfirefighting.org/course/view.php?id=957">Cardiovascular and Chemical Exposure Risks During Training</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH01FF2015" href="https://atfd.learnfirefighting.org/course/view.php?id=424">CH 01 History of the Fire Service</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH01FF2019" href="https://atfd.learnfirefighting.org/course/view.php?id=1018">CH 01 Introduction to the Fire Service and Firefighter Safety</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH02FF2019" href="https://atfd.learnfirefighting.org/course/view.php?id=1019">CH 02 Communications</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH02FF2015" href="https://atfd.learnfirefighting.org/course/view.php?id=425">CH 02 Firefighter Health &amp; Safety</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH03FF2019" href="https://atfd.learnfirefighting.org/course/view.php?id=1020">CH 03 Building Construction</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH 03" href="https://atfd.learnfirefighting.org/course/view.php?id=497">CH 03 Communications</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH 03 FFII" href="https://atfd.learnfirefighting.org/course/view.php?id=518">CH 03 Fire Department Communications II</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH 04" href="https://atfd.learnfirefighting.org/course/view.php?id=498">CH 04 Building Construction</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH 04 FFII" href="https://atfd.learnfirefighting.org/course/view.php?id=519">CH 04 Building Construction II</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH04FF2019" href="https://atfd.learnfirefighting.org/course/view.php?id=1021">CH 04 Fire Dynamics</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH 05" href="https://atfd.learnfirefighting.org/course/view.php?id=499">CH 05 Fire Behavior</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH05FF2019" href="https://atfd.learnfirefighting.org/course/view.php?id=1022">CH 05 Firefighter Personal Protective Equipment</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH06FF2015" href="https://atfd.learnfirefighting.org/course/view.php?id=495">CH 06 Personal Protective Equipment</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH06FF2019" href="https://atfd.learnfirefighting.org/course/view.php?id=1025">CH 06 Portable Fire Extinguishers</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH 07" href="https://atfd.learnfirefighting.org/course/view.php?id=500">CH 07 Portable Fire Extinguishers</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH07FF2019" href="https://atfd.learnfirefighting.org/course/view.php?id=1026">CH 07 Ropes and Knots</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH08FF2019" href="https://atfd.learnfirefighting.org/course/view.php?id=1027">CH 08 Ground Ladders</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH 08" href="https://atfd.learnfirefighting.org/course/view.php?id=501">CH 08 Ropes, Knots and Webbing</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH09FF2019" href="https://atfd.learnfirefighting.org/course/view.php?id=1028">CH 09 Forcible Entry</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH 09" href="https://atfd.learnfirefighting.org/course/view.php?id=504">CH 09 Structural Search, Victim Removal &amp; Firefighter Survival</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH 10" href="https://atfd.learnfirefighting.org/course/view.php?id=505">CH 10 Scene Lighting, Rescue Tools, Vehicle Extrication</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH 10 FFII" href="https://atfd.learnfirefighting.org/course/view.php?id=520">CH 10 Scene Lighting, Rescue Tools, Vehicle Extrication and Technical Rescue II</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH10FF2019" href="https://atfd.learnfirefighting.org/course/view.php?id=1030">CH 10 Structural Search and Rescue</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH 11" href="https://atfd.learnfirefighting.org/course/view.php?id=506">CH 11 Forcible Entry</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH11FF2019" href="https://atfd.learnfirefighting.org/course/view.php?id=1031">CH 11 Tactical Ventilation</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH12FF2019" href="https://atfd.learnfirefighting.org/course/view.php?id=1032">CH 12 Fire Hose</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH 12" href="https://atfd.learnfirefighting.org/course/view.php?id=507">CH 12 Ground Ladder</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH13FF2019" href="https://atfd.learnfirefighting.org/course/view.php?id=1033">CH 13 Hose Operations and Hose Streams</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH 13" href="https://atfd.learnfirefighting.org/course/view.php?id=508">CH 13 Tactical Ventilation</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH14FF2019" href="https://atfd.learnfirefighting.org/course/view.php?id=1034">CH 14 Fire Suppression</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH 14" href="https://atfd.learnfirefighting.org/course/view.php?id=509">CH 14 Water Supply</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH 15" href="https://atfd.learnfirefighting.org/course/view.php?id=510">CH 15 Fire Hose</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH 15 FFII" href="https://atfd.learnfirefighting.org/course/view.php?id=521">CH 15 Fire Hose II</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH15FF2019" href="https://atfd.learnfirefighting.org/course/view.php?id=1035">CH 15 Overhaul, Property Conservation and Scene Preservation</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH16FF2019" href="https://atfd.learnfirefighting.org/course/view.php?id=1037">CH 16 Building Materials, Structural Collapse, and Effects of Fire Suppression</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH 16" href="https://atfd.learnfirefighting.org/course/view.php?id=512">CH 16 Fire Streams</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH 16 FFII" href="https://atfd.learnfirefighting.org/course/view.php?id=523">CH 16 Fire Streams II (Foam)</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH 17" href="https://atfd.learnfirefighting.org/course/view.php?id=513">CH 17 Fire Control</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH 17 FFII" href="https://atfd.learnfirefighting.org/course/view.php?id=524">CH 17 Fire Control II</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH17FF2019" href="https://atfd.learnfirefighting.org/course/view.php?id=1038">CH 17 Technical Rescue Support and Vehicle Extrication Operations</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH18FF2019" href="https://atfd.learnfirefighting.org/course/view.php?id=1039">CH 18 Foam Fire Fighting, Liquid Fires, and Gas Fires</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH 18" href="https://atfd.learnfirefighting.org/course/view.php?id=514">CH 18 Loss Control</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH 19" href="https://atfd.learnfirefighting.org/course/view.php?id=515">CH 19 Fire Origin &amp; Cause Determination</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH 19 FFII" href="https://atfd.learnfirefighting.org/course/view.php?id=525">CH 19 Fire Origin &amp; Cause Determination II</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH19FF2019" href="https://atfd.learnfirefighting.org/course/view.php?id=1040">CH 19 Incident Scene Operations</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH20FF2019" href="https://atfd.learnfirefighting.org/course/view.php?id=1042">CH 20 Fire Origin and Cause Determination</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH 20 FFII" href="https://atfd.learnfirefighting.org/course/view.php?id=526">CH 20 Fire Protection System II</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH 21" href="https://atfd.learnfirefighting.org/course/view.php?id=516">CH 21 Fire &amp; Life Safety Initiatives</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH 21 FFII" href="https://atfd.learnfirefighting.org/course/view.php?id=527">CH 21 Fire &amp; Life Safety Initiatives II</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH21FF2019" href="https://atfd.learnfirefighting.org/course/view.php?id=1043">CH 21 Maintenance and Testing Responsibilities</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH 22" href="https://atfd.learnfirefighting.org/course/view.php?id=502">CH 22 Basic Emergency Medical Care</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH22FF2019" href="https://atfd.learnfirefighting.org/course/view.php?id=1044">CH 22 Community Risk Reduction</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH23FF2019" href="https://atfd.learnfirefighting.org/course/view.php?id=1023">CH 23 First Aid Provider</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH 23 HAZOPS" href="https://atfd.learnfirefighting.org/course/view.php?id=914">CH 23-24 NFPA 472 HAZMAT Operations</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH 23 HAZAWARE" href="https://atfd.learnfirefighting.org/course/view.php?id=915">CH 23-24 NFPA 472 HAZMAT WMD-CBRNE Awareness</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH24FF2019" href="https://atfd.learnfirefighting.org/course/view.php?id=1047">CH 24 Analyzing the Incident</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH25FF2019" href="https://atfd.learnfirefighting.org/course/view.php?id=1048">CH 25 Action Options and Response Objectives</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH26FF2019" href="https://atfd.learnfirefighting.org/course/view.php?id=1049">CH 26 Personal Protective Equipment, Product Control, and Decontamination</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CH27FF2019" href="https://atfd.learnfirefighting.org/course/view.php?id=1045">CH 27 National Incident Management System - Incident Command Structure</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="RITCH01" href="https://atfd.learnfirefighting.org/course/view.php?id=999">CH01 Basics of a Rapid Intervention Crew</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="TR_CH01" href="https://atfd.learnfirefighting.org/course/view.php?id=830">CH01 Introduction to Technical Search and Rescue</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="WCH01" href="https://atfd.learnfirefighting.org/course/view.php?id=898">CH01 Understanding/Managing Water Rescue Incidents</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="RITCH02" href="https://atfd.learnfirefighting.org/course/view.php?id=1003">CH02 Planning for a Prepared RIC</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="TR_CH02" href="https://atfd.learnfirefighting.org/course/view.php?id=831">CH02 PPE and Rescue Equipment</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="WCH02" href="https://atfd.learnfirefighting.org/course/view.php?id=899">CH02 Watercraft Rescue Operations</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="RITCH03" href="https://atfd.learnfirefighting.org/course/view.php?id=1000">CH03 RIC On Scene: Preactivation Considerations and Actions While Staged</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="TR_CH03" href="https://atfd.learnfirefighting.org/course/view.php?id=832">CH03 Scene Support Operations</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="WCH03" href="https://atfd.learnfirefighting.org/course/view.php?id=900">CH03 Watercraft Rescue Technician</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="RITCH04" href="https://atfd.learnfirefighting.org/course/view.php?id=1001">CH04 Activation of the RIC and Organizational Considerations</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="TR_CH04" href="https://atfd.learnfirefighting.org/course/view.php?id=833">CH04 Preincident Planning and Hazard Recognition</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="WCH04" href="https://atfd.learnfirefighting.org/course/view.php?id=901">CH04 Surface Water Rescue Operations</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="TR_CH05" href="https://atfd.learnfirefighting.org/course/view.php?id=834">CH05 Organizing the Response</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="RITCH05" href="https://atfd.learnfirefighting.org/course/view.php?id=1004">CH05 Rapid Intervention and Self-Rescue</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="WCH05" href="https://atfd.learnfirefighting.org/course/view.php?id=902">CH05 Surface Water Rescue Technician</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="TR_CH06" href="https://atfd.learnfirefighting.org/course/view.php?id=835">CH06 Search Operations</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="RITCH06" href="https://atfd.learnfirefighting.org/course/view.php?id=1002">CH06 Skills and Techniques of the Rapid Intervention Search</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="WCH06" href="https://atfd.learnfirefighting.org/course/view.php?id=903">CH06 Swiftwater Rescue Operations</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="RITCH07" href="https://atfd.learnfirefighting.org/course/view.php?id=1007">CH07 RIC Team Actions Once the Downed Fire Fighter Is Found</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="WCH07" href="https://atfd.learnfirefighting.org/course/view.php?id=904">CH07 Swiftwater Rescue Technician</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="TR_CH07" href="https://atfd.learnfirefighting.org/course/view.php?id=836">CH07 Victim Management</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="TR_CH08" href="https://atfd.learnfirefighting.org/course/view.php?id=847">CH08 Basic Ropes and Systems</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="WCH08" href="https://atfd.learnfirefighting.org/course/view.php?id=905">CH08 Flood Rescue</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="RITCH08" href="https://atfd.learnfirefighting.org/course/view.php?id=1005">CH08 RIC Skills: Rapidly Moving a Downed Fire Fighter</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="WCH09" href="https://atfd.learnfirefighting.org/course/view.php?id=906">CH09 Ice Rescue Operations</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="TR_CH09" href="https://atfd.learnfirefighting.org/course/view.php?id=845">CH09 Low-Angle and High-Angle Rope Rescue</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="RITCH09" href="https://atfd.learnfirefighting.org/course/view.php?id=1006">CH09 RIC Stair Rescue Techniques: Variables, Challenges, and Skills</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="TR_CH10" href="https://atfd.learnfirefighting.org/course/view.php?id=844">CH10 Confined Space Rescue</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="WCH10" href="https://atfd.learnfirefighting.org/course/view.php?id=907">CH10 Ice Rescue Technician</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="RITCH10" href="https://atfd.learnfirefighting.org/course/view.php?id=1010">CH10 Rescuing Fire Fighters Through Windows, Over Ladders, and From Restrictive, Limited Space</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="RITCH11" href="https://atfd.learnfirefighting.org/course/view.php?id=1008">CH11 Rescuing a Fire Fighter From Below Grade and Through a Hole in the Floor</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="WCH11" href="https://atfd.learnfirefighting.org/course/view.php?id=908">CH11 Surf Rescue Operations</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="TR_CH11" href="https://atfd.learnfirefighting.org/course/view.php?id=843">CH11 Trench Rescuer</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="RITCH12" href="https://atfd.learnfirefighting.org/course/view.php?id=1009">CH12 Fire Fighters Trapped in Attics</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="TR_CH12" href="https://atfd.learnfirefighting.org/course/view.php?id=842">CH12 Structural Collapse Rescuer</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="WCH12" href="https://atfd.learnfirefighting.org/course/view.php?id=909">CH12 Surf Rescue Technician</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="WCH13" href="https://atfd.learnfirefighting.org/course/view.php?id=910">CH13 Dive Equipment and Use</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="TR_CH13" href="https://atfd.learnfirefighting.org/course/view.php?id=840">CH13 Surface Water Rescuer</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="WCH14" href="https://atfd.learnfirefighting.org/course/view.php?id=911">CH14 Dive Rescue Operations</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="TR_CH14" href="https://atfd.learnfirefighting.org/course/view.php?id=841">CH14 Swift Water Rescuer</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="WCH15" href="https://atfd.learnfirefighting.org/course/view.php?id=912">CH15 Dive Rescue Technician</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="WCH16" href="https://atfd.learnfirefighting.org/course/view.php?id=913">CH16 Helicopter Rescue Support</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="FICH01" href="https://atfd.learnfirefighting.org/course/view.php?id=879">Chapter 01 The Instructor as a Professional</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="FICH02" href="https://atfd.learnfirefighting.org/course/view.php?id=880">Chapter 02 Principles of Learning</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="FICH03" href="https://atfd.learnfirefighting.org/course/view.php?id=881">Chapter 03 Instructional Planning</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="FICH04" href="https://atfd.learnfirefighting.org/course/view.php?id=883">Chapter 04 Instructional Materials and Equipment</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="FICH05" href="https://atfd.learnfirefighting.org/course/view.php?id=884">Chapter 05 Learning Environment</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="FICH06" href="https://atfd.learnfirefighting.org/course/view.php?id=885">Chapter 06 Classroom Instruction</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="FICH07" href="https://atfd.learnfirefighting.org/course/view.php?id=887">Chapter 07 Skills-Based Training Beyond the Classroom</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="FICH08" href="https://atfd.learnfirefighting.org/course/view.php?id=888">Chapter 08 Testing and Evaluation</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="FICH09" href="https://atfd.learnfirefighting.org/course/view.php?id=889">Chapter 09 Records, Reports, and Scheduling</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="IFSTA FO5 CH01" href="https://atfd.learnfirefighting.org/course/view.php?id=856">Chapter 1 - The Company Officer I</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="DOCH01" href="https://atfd.learnfirefighting.org/course/view.php?id=922">Chapter 1 - Types of Apparatus Equipped with a Pump</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="DOCH10" href="https://atfd.learnfirefighting.org/course/view.php?id=931">Chapter 10 - Operating Fire Pumps</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="IFSTA FO5 CH10" href="https://atfd.learnfirefighting.org/course/view.php?id=869">Chapter 10 - Preincident Surveys</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="FICH10" href="https://atfd.learnfirefighting.org/course/view.php?id=890">Chapter 10 Lesson Plan Development</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="IFSTA FO5 CH11" href="https://atfd.learnfirefighting.org/course/view.php?id=870">Chapter 11 - Delivery of Emergency Services I</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="DOCH11" href="https://atfd.learnfirefighting.org/course/view.php?id=936">Chapter 11 - Static Water Supply Sources</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="FICH11" href="https://atfd.learnfirefighting.org/course/view.php?id=891">Chapter 11 Training Evolution Supervision</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="DOCH12" href="https://atfd.learnfirefighting.org/course/view.php?id=937">Chapter 12 - Relay Pumping Operations</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="IFSTA FO5 CH12" href="https://atfd.learnfirefighting.org/course/view.php?id=873">Chapter 12 - The Company Officer II</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="FICH12" href="https://atfd.learnfirefighting.org/course/view.php?id=892">Chapter 12 Test Item Construction</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="IFSTA FO5 CH13" href="https://atfd.learnfirefighting.org/course/view.php?id=874">Chapter 13 - Human Resources Management II</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="DOCH13" href="https://atfd.learnfirefighting.org/course/view.php?id=938">Chapter 13 - Water Shuttle Operations</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="FICH13" href="https://atfd.learnfirefighting.org/course/view.php?id=893">Chapter 13 Supervisory and Administrative Duties</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="IFSTA FO5 CH14" href="https://atfd.learnfirefighting.org/course/view.php?id=875">Chapter 14 - Administrative Responsibilities</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="DOCH14" href="https://atfd.learnfirefighting.org/course/view.php?id=939">Chapter 14 - Foam Equipment and Systems</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="FICH14" href="https://atfd.learnfirefighting.org/course/view.php?id=894">Chapter 14 Instructor and Class Evaluations</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="DOCH15" href="https://atfd.learnfirefighting.org/course/view.php?id=940">Chapter 15 - Apparatus Testing</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="IFSTA FO5 CH15" href="https://atfd.learnfirefighting.org/course/view.php?id=876">Chapter 15 - Origin and Cause Determination</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="FICH15" href="https://atfd.learnfirefighting.org/course/view.php?id=895">Chapter 15 Course and Curriculum Development</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="IFSTA FO5 CH16" href="https://atfd.learnfirefighting.org/course/view.php?id=877">Chapter 16 - Delivery of Emergency Services II</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="DOCH16" href="https://atfd.learnfirefighting.org/course/view.php?id=941">Chapter 16 - Introduction to Aerial Fire Apparatus</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="FICH16" href="https://atfd.learnfirefighting.org/course/view.php?id=896">Chapter 16: Training Program Evaluation</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="DOCH17" href="https://atfd.learnfirefighting.org/course/view.php?id=942">Chapter 17 - Positioning Aerial Apparatus</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="IFSTA FO5 CH17" href="https://atfd.learnfirefighting.org/course/view.php?id=878">Chapter 17 - Safety Investigation and Analyses</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="FICH17" href="https://atfd.learnfirefighting.org/course/view.php?id=897">Chapter 17: Training Program Administration</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="DOCH18" href="https://atfd.learnfirefighting.org/course/view.php?id=943">Chapter 18 - Stabilizing the Apparatus</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="DOCH19" href="https://atfd.learnfirefighting.org/course/view.php?id=944">Chapter 19 - Operating Aerial Apparatus</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="DOCH02" href="https://atfd.learnfirefighting.org/course/view.php?id=923">Chapter 2 - Apparatus Inspection and Maintenance</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="IFSTA FO5 CH02" href="https://atfd.learnfirefighting.org/course/view.php?id=857">Chapter 2 - Organizational Structure</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="DOCH20" href="https://atfd.learnfirefighting.org/course/view.php?id=945">Chapter 20 - Aerial Apparatus Strategies and Tactics</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="IFSTA FO5 CH02A" href="https://atfd.learnfirefighting.org/course/view.php?id=858">Chapter 2A - Department Specific Organizational Elements</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="DOCH03" href="https://atfd.learnfirefighting.org/course/view.php?id=924">Chapter 3 - Apparatus Safety and Operating Emergency Vehicles</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="IFSTA FO5 CH03" href="https://atfd.learnfirefighting.org/course/view.php?id=859">Chapter 3 - Leadership and Supervision</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="IFSTA FO5 CH04" href="https://atfd.learnfirefighting.org/course/view.php?id=860">Chapter 4 - Human Resources Management I</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="DOCH04" href="https://atfd.learnfirefighting.org/course/view.php?id=925">Chapter 4 - Positioning Apparatus</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="IFSTA FO5 CH05" href="https://atfd.learnfirefighting.org/course/view.php?id=862">Chapter 5 - Communications</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="DOCH05" href="https://atfd.learnfirefighting.org/course/view.php?id=926">Chapter 5 - Principles of Water</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="IFSTA FO5 CH06" href="https://atfd.learnfirefighting.org/course/view.php?id=863">Chapter 6 - Administrative Functions</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="DOCH06" href="https://atfd.learnfirefighting.org/course/view.php?id=927">Chapter 6 - Hose Nozzles and Flow Rates</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="IFSTA FO5 CH07" href="https://atfd.learnfirefighting.org/course/view.php?id=865">Chapter 7 - Health and Safety Issues</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="DOCH07" href="https://atfd.learnfirefighting.org/course/view.php?id=928">Chapter 7 - Theoretical Pressure Calculations</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="IFSTA FO5 CH08" href="https://atfd.learnfirefighting.org/course/view.php?id=866">Chapter 8 - Company-Level Training</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="DOCH08" href="https://atfd.learnfirefighting.org/course/view.php?id=929">Chapter 8 - Fireground Hydraulic Calculations</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="IFSTA FO5 CH09" href="https://atfd.learnfirefighting.org/course/view.php?id=867">Chapter 9 - Community Relations and Company-Level Fire Inspections</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="DOCH09" href="https://atfd.learnfirefighting.org/course/view.php?id=930">Chapter 9 - Fire Pump Theory</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB_Template" href="https://atfd.learnfirefighting.org/course/view.php?id=385">Company Drill Template</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="C1EXAM" href="https://atfd.learnfirefighting.org/course/view.php?id=971">Component One Exam Challenge</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSR-Ops" href="https://atfd.learnfirefighting.org/course/view.php?id=848">Confined Space Rescue Operations (CSR-Ops)</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB103" href="https://atfd.learnfirefighting.org/course/view.php?id=983">CSB 103 SCBA-Air Emergencies</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB-AT1" href="https://atfd.learnfirefighting.org/course/view.php?id=608">CSB-AT1 Medical Heat and Cold Stress Management</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB1-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=426">CSB1 Handling Ground Ladders Objective</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB10-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=435">CSB10 FOAM AND FOAM EQUIPMENT OBJECTIVES</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB100-2017" href="https://atfd.learnfirefighting.org/course/view.php?id=972">CSB100 Low Angle Refamiliarization</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB102" href="https://atfd.learnfirefighting.org/course/view.php?id=973">CSB102 ICS Refresher</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB11-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=436">CSB11 Fire Hydrant Inspection And Testing Objective</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB12-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=473">CSB12 Portable Fire Extinguishers Objective</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB13-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=437">CSB13 Trash Container And Class A Piled Fires Objective</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB14_2014" href="https://atfd.learnfirefighting.org/course/view.php?id=990">CSB14 Safety Precautions For Using Self-Contained Breathing Apparatus</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB14-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=438">CSB14 Safety Precautions For Using Self-Contained Breathing Apparatus Objective</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB15-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=439">CSB15 Negotiating Restricted Openings Wearing Standard Self-Contained Breathing Apparatus Objectives</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB16-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=440">CSB16 Structural Fire Search And Rescue Objective</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB17_2014" href="https://atfd.learnfirefighting.org/course/view.php?id=989">CSB17 Controlling Building Utilities </a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB17-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=441">CSB17 Controlling Building Utilities</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB18_2014" href="https://atfd.learnfirefighting.org/course/view.php?id=992">CSB18 Floodlighting and Power Generation/Distribution Equipment</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB18-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=442">CSB18 Floodlighting and Power Generation/Distribution Equipment Objective</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB19-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=443">CSB19 Auto Extrication Objective</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB2-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=427">CSB2 ONE- AND TWO-FIREFIGHTER GROUND LADDER RAISES OBJECTIVE</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB20-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=444">CSB20 Automatic Sprinkler Systems Objectives</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB21_2014" href="https://atfd.learnfirefighting.org/course/view.php?id=991">CSB21 Building Contruction</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB21-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=445">CSB21 Building Contruction Objectives</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB22-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=447">CSB22 Home Fire Safety Surveys Objective</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB23-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=474">CSB23 Fire Station Visitor And Telephone Call Procedures Objectives</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB24-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=454">CSB24 Radio And Size-UP Procedures Objectives</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB26-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=455">CSB26 The FireFighter's Role In Fire Cause Determination Objective</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB27-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=456">CSB27 Fire Behavior Objective</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB28-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=446">CSB28 Inspecting And Refilling Self-Contained Breathing Apparatus Objective</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB29-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=475">CSB29 Ropes And Knots Objectives</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB3-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=428">CSB3 Three- And Four-Firefighter Ground Ladder Raises And Roof Ladder Deployment Objective</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB30-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=448">CSB30 Rescue And Forcible Entry Tools Objectives</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB31-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=457">CSB31 Pre-Incident Survey Objective</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB32-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=449">CSB32 Fire Department Tanker/Tender Safety Objective</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB33-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=476">CSB33 Responding To Electrical Utility Emergincies Objective</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB34-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=450">CSB34 Static Water Supply Sources Objective</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB35-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=458">CSB35 Roles Of Other Agencies That Interact With The Fire Department Objective</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB36-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=451">CSB36 Practical Apparatus Driving Exercises Objective</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB37-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=452">CSB37 Safe Driving Techniques Objective</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB38-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=486">CSB38 - Pumping Attack Lines From A Pressurized Water Supply Source Objectives</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB39-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=459">CSB39 Drafting Operations Objective</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB4-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=429">CSB4 Ground Ladder Safety And Victim Rescue Objectives</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB40-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=460">CSB40 Relay Pumping Operations Objective</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB41-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=461">CSB41 Service Testing Fire Pumps Objective</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB43-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=462">CSB43 Operating The Aerial Device Objective</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB45-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=463">CSB45 Pre-Trip Apparatus Inspections And Road Tests Objective</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB47-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=464">CSB47 Establishing A Water Shuttle Dump Site Objective</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB49-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=465">CSB49 Automobile Extrication Evolution Objective</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB5-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=453">CSB5 Inspecting And Service Testing Ground Ladders Objective</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB50-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=477">CSB50 Vehicle Fire Evolution Objective</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB51-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=478">CSB51 Company Salvage Evolution Objective</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB52-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=466">CSB52 Window Rescue Evolution Objective</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB53-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=479">CSB53 Company Vertical Ventilation Evolution Objective</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB57-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=480">CSB57 Company Positive Pressure Ventilation Evolution Objective</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB58-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=467">CSB58 Reverse Lay Evolution Objectives</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB59-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=468">CSB59 - Extending Wyed Lines From A Large Handline Evolution Objective</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB6-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=430">CSB6 Hose Equipment And Hose Roll Review Objectives</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB61-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=481">CSB61 Assembling And Preparing To Operate A RIT/RIC Staging Area Objective</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB63-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=482">CSB63 Establishing A Rehab Area Objectives</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB64-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=483">CSB64 Establishing A Medical Helicopter Landing Zone Objectives</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB65-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=484">CSB65 Roadway Scene Safety Objective</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB66-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=485">CSB66 Hose Stretch Activity Personnel To Participate In This Activity</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB67-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=469">CSB67 Pass Device Location Activity Personnel To Participate In This Activity</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB68-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=470">CSB68 Timed SCBA Donning Activity Personnel To Participate In This Activity</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB69-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=471">CSB69 Quick Ladder Raise Activity Personnel To Participate In This Activity</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB7-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=431">CSB7 ADVANCING HOSELINES OBJECTIVE</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB70-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=472">CSB70 Dress-For-Fire Activity Personnel To Participate In This Activity</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB71-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=487">CSB71 SCBA Cylinder Change Activity Personnel To Participate In This Activity</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB72-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=488">CSB72 Quick Water Activity For Apparatus Driver/Operators Personnel To Participate In This Activity</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB73-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=489">CSB73 Supply Line Hand Jack Activity Personnel To Participate In This Activity</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB74-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=491">CSB74 Supply Line To Apparatus Connection Activity Personnel To Participate In This Activity</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB75-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=490">CSB75 Emergency Evacuation Activity Personnel To Participate In This Activity</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB8-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=434">CSB8 Supply Hose Lays And Water Supply Connections Objective</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB9-2014" href="https://atfd.learnfirefighting.org/course/view.php?id=432">CSB9 Inspecting And Service Testing Fire Hose Objective</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="DZ101" href="https://atfd.learnfirefighting.org/course/view.php?id=916">DZ Licence &amp; Fire Department Apparatus Driver</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="DZ_101" href="https://atfd.learnfirefighting.org/course/view.php?id=920">DZ Licence &amp; Fire Department Apparatus Driver</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="EUE" href="https://atfd.learnfirefighting.org/course/view.php?id=967">Electrical Utility Emergencies</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="EDT101" href="https://atfd.learnfirefighting.org/course/view.php?id=609">Emergency Driver Training</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="FSA-6" href="https://atfd.learnfirefighting.org/course/view.php?id=956">Evidence-Based Approaches to Reduce Exposure Risks</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="EXCH_08" href="https://atfd.learnfirefighting.org/course/view.php?id=388">Example -CH 08 Ropes, Knots and Webbing</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="FT" href="https://atfd.learnfirefighting.org/course/view.php?id=976">Facility Tour</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="FF_RCD" href="https://atfd.learnfirefighting.org/course/view.php?id=968">FF Role in Cause Determination</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="Files" href="https://atfd.learnfirefighting.org/course/view.php?id=604">Files</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="FDInfo" href="https://atfd.learnfirefighting.org/course/view.php?id=383">Fire Department FLMS Implementation &amp; Deployment Project</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="15RIC" href="https://atfd.learnfirefighting.org/course/view.php?id=1012">Fire Service Rapid Intervention Crews (Nedder)</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="EXAFF2015" href="https://atfd.learnfirefighting.org/course/view.php?id=607">Firefighter I Exam A</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="FFIExamB" href="https://atfd.learnfirefighting.org/course/view.php?id=511">Firefighter I Exam B</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="FFIExamC" href="https://atfd.learnfirefighting.org/course/view.php?id=517">Firefighter I Exam C</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="FFIIExamA" href="https://atfd.learnfirefighting.org/course/view.php?id=522">Firefighter II Exam A</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="FFIIExamB" href="https://atfd.learnfirefighting.org/course/view.php?id=528">Firefighter II Exam B</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="Grand" href="https://atfd.learnfirefighting.org/course/view.php?id=977">Firefighter Information / Firehouse Uploads</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="FLMSLV1" href="https://atfd.learnfirefighting.org/course/view.php?id=384">FLMS Level 1 - Firefighter Learner</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="FLMSLV2" href="https://atfd.learnfirefighting.org/course/view.php?id=529">FLMS Level 2 - Fire Instructor</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="NFPA1407_PRECLASS" href="https://atfd.learnfirefighting.org/course/view.php?id=998">FS Rapid Intervention Crews Pre-Class Assignments</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="NISTFDynamics1" href="https://atfd.learnfirefighting.org/course/view.php?id=988">Governors Island NIST Fire Dynamics Course</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="HS" href="https://atfd.learnfirefighting.org/course/view.php?id=606">HS</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="FSA-4" href="https://atfd.learnfirefighting.org/course/view.php?id=954">Introduction to Heat Transfer and Fire Measurements</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CO101-06-24-13" href="https://atfd.learnfirefighting.org/course/view.php?id=960">Legislation 101 Online 06-24-2013</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="MCTemplate2013" href="https://atfd.learnfirefighting.org/course/view.php?id=386">Master Curriculum Template 2013</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="MEMO" href="https://atfd.learnfirefighting.org/course/view.php?id=602">Memos to be Read</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="SCBA_PaBS" href="https://atfd.learnfirefighting.org/course/view.php?id=964">MSA G1 SCBA Pack and Bottle Safety</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="News" href="https://atfd.learnfirefighting.org/course/view.php?id=603">News</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="1410" href="https://atfd.learnfirefighting.org/course/view.php?id=969">NFPA 1410 - Evolutions</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="NTFR.C/O" href="https://atfd.learnfirefighting.org/course/view.php?id=855">Nov 22nd, 2015 - NTFR C/O Dev. session 1</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="FS/RIT101" href="https://atfd.learnfirefighting.org/course/view.php?id=994">NTFR Firefighter Survival/RIT</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="LAROPE101" href="https://atfd.learnfirefighting.org/course/view.php?id=849">NTFR Low Angle Rope Rescue Program</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OFCNFPATmp" href="https://atfd.learnfirefighting.org/course/view.php?id=387">OFC NFPA Template</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="ONSkills1001_1" href="https://atfd.learnfirefighting.org/course/view.php?id=1016">Ontario Skills Sheets Firefighter I</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="ONSkills1001_2" href="https://atfd.learnfirefighting.org/course/view.php?id=1017">Ontario Skills Sheets Firefighter II</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="HAZMAT_Operations" href="https://atfd.learnfirefighting.org/course/view.php?id=1050">Ontario Skills Sheets HAZMAT Operations</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="ORG101" href="https://atfd.learnfirefighting.org/course/view.php?id=986">ORNGE Helicopter &amp; Landing Zone Safety</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="PPEIC" href="https://atfd.learnfirefighting.org/course/view.php?id=959">PPE Inspection and Cleaning</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OFRPROMO" href="https://atfd.learnfirefighting.org/course/view.php?id=853">Promotional Study Resources</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="PAD101" href="https://atfd.learnfirefighting.org/course/view.php?id=932">Pump Apparatus Driving</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="PumpSim" href="https://atfd.learnfirefighting.org/course/view.php?id=987">Pump Operator Simulator</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="RSU" href="https://atfd.learnfirefighting.org/course/view.php?id=962">Radio and On-Scene Size Up</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="Re-Intro" href="https://atfd.learnfirefighting.org/course/view.php?id=693">Re-introduction Program</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="RAD101" href="https://atfd.learnfirefighting.org/course/view.php?id=933">Rescue Apparatus Driving</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="FSA-5" href="https://atfd.learnfirefighting.org/course/view.php?id=955">Research for the Development of More Effective Tactics</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="DOPORes" href="https://atfd.learnfirefighting.org/course/view.php?id=921">Resource Reviews and Requests</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="ENBGAS" href="https://atfd.learnfirefighting.org/course/view.php?id=949">Responding to Natural Gas Emergencies</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="Rope Inst" href="https://atfd.learnfirefighting.org/course/view.php?id=838">Rope Instructor</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CHIMFIRE_1" href="https://atfd.learnfirefighting.org/course/view.php?id=984">S14B Chimney Fires </a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CHIMFIRE" href="https://atfd.learnfirefighting.org/course/view.php?id=530">S14B Chimney Fires</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="C1S6R" href="https://atfd.learnfirefighting.org/course/view.php?id=965">S6B Protective Clothing Refresh</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="SCHaz" href="https://atfd.learnfirefighting.org/course/view.php?id=985">SC _ HAZ MAT Team (</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="SSAP-X3" href="https://atfd.learnfirefighting.org/course/view.php?id=982">Scott Safety Air Pak X3 SCBA</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB_RENEW" href="https://atfd.learnfirefighting.org/course/view.php?id=974">Solar and Renewable Electricity Safety for Firefighters</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="FSA-3" href="https://atfd.learnfirefighting.org/course/view.php?id=953">Suppression Tactics in Single-Family Homes</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="T-35SPO" href="https://atfd.learnfirefighting.org/course/view.php?id=979">T-35 Side Pump-Off "McGuyver"</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="TAD101" href="https://atfd.learnfirefighting.org/course/view.php?id=934">Tanker Apparatus Driving</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="TR-RT" href="https://atfd.learnfirefighting.org/course/view.php?id=839">Technical Rescue - Rope Technician (LEVEL II)</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="TR-RA" href="https://atfd.learnfirefighting.org/course/view.php?id=852">Technical Rescue-Rope Awareness</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="TR-RO" href="https://atfd.learnfirefighting.org/course/view.php?id=846">Technical Rescue-Rope Operations (LEVEL I)</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="TR-W" href="https://atfd.learnfirefighting.org/course/view.php?id=851">Technical Rescue: Water (Surface, Ice, and Swift)</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="TWC" href="https://atfd.learnfirefighting.org/course/view.php?id=981">Tool Work Competence</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="OonR" href="https://atfd.learnfirefighting.org/course/view.php?id=961">Traffic - Operating on Roadways</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="Training" href="https://atfd.learnfirefighting.org/course/view.php?id=605">Training</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="TransHaz" href="https://atfd.learnfirefighting.org/course/view.php?id=980">Transportation of Radioactive Materials in Ontario</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="FSA-1" href="https://atfd.learnfirefighting.org/course/view.php?id=951">Water Mapping in Residential Structures</a></div></li>
+<li class="r1"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="nCoV101" href="https://atfd.learnfirefighting.org/course/view.php?id=963">WHO- Emerging Respiratory Viruses - Coronavirus</a></div></li>
+<li class="r0"><div class="icon column c0"><img src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/i/course.gif" class="icon" alt="Course category" /></div><div class="column c1"><a title="CSB500" href="https://atfd.learnfirefighting.org/course/view.php?id=610">Wildland Firefighting Refresher</a></div></li>
+</ul>
+<div class="footer"><a href="https://atfd.learnfirefighting.org/course/index.php">All courses</a> ...</div></div></div><script type="text/javascript">
+//<![CDATA[
+elementCookieHide("inst5794","Show My courses block","Hide My courses block");
+//]]>
+</script><span id="sb-6" class="skip-block-to"></span></div></aside>
+</div>
+</div><div id="footer"><p class="helplink"></p><div class="logininfo">You are logged in as <a href="https://atfd.learnfirefighting.org/user/view.php?id=339&amp;course=1">Joshua Bricknell</a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://atfd.learnfirefighting.org/login/logout.php?sesskey=8MVDLt1WIf"><i class="fa fa-sign-out"></i></a></div></div></div>
+<script>
+function callmycourse(frontsection){
+        $('#loading').show();
+        $.ajax({
+                url: "https://atfd.learnfirefighting.org/getcourses.php",
+                type: "post",
+                data: { front_section: frontsection} ,
+                success: function(data){
+
+                        $('.agendalist').html(data);
+                        $('#loading').hide();
+                }
+        });
+}
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-46760165-7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-46760165-7');
+</script>
+</body>
+</html>

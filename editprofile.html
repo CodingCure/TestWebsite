@@ -1,0 +1,816 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="https://atfd.learnfirefighting.org/theme/standard/styles.php" />
+<link rel="stylesheet" type="text/css" href="https://atfd.learnfirefighting.org/theme/fandango/styles.php" />
+<!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="https://atfd.learnfirefighting.org/theme/standard/styles_ie7.css" />
+<![endif]-->
+<!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="https://atfd.learnfirefighting.org/theme/standard/styles_ie6.css" />
+<![endif]-->
+<meta name="keywords" content="moodle, ATFD: Edit profile " />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ATFD: Edit profile</title>
+<link rel="shortcut icon" href="https://atfd.learnfirefighting.org/theme/fandango/favicon.ico" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+<script type="text/javascript" src="https://atfd.learnfirefighting.org/lib/javascript-static.js"></script>
+<script type="text/javascript" src="https://atfd.learnfirefighting.org/lib/javascript-mod.php"></script>
+<script type="text/javascript" src="https://atfd.learnfirefighting.org/lib/overlib/overlib.js"></script>
+<script type="text/javascript" src="https://atfd.learnfirefighting.org/lib/overlib/overlib_cssstyle.js"></script>
+<script type="text/javascript" src="https://atfd.learnfirefighting.org/lib/cookies.js"></script>
+<script type="text/javascript" src="https://atfd.learnfirefighting.org/lib/ufo.js"></script>
+<script type="text/javascript" src="https://atfd.learnfirefighting.org/lib/dropdown.js"></script>
+<script type="text/javascript" defer="defer">
+//<![CDATA[
+setTimeout('fix_column_widths()', 20);
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+function openpopup(url, name, options, fullscreen) {
+    var fullurl = "https://atfd.learnfirefighting.org" + url;
+    var windowobj = window.open(fullurl, name, options);
+    if (!windowobj) {
+        return true;
+    }
+    if (fullscreen) {
+        windowobj.moveTo(0, 0);
+        windowobj.resizeTo(screen.availWidth, screen.availHeight);
+    }
+    windowobj.focus();
+    return false;
+}
+
+function uncheckall() {
+    var inputs = document.getElementsByTagName('input');
+    for(var i = 0; i < inputs.length; i++) {
+        inputs[i].checked = false;
+    }
+}
+
+function checkall() {
+    var inputs = document.getElementsByTagName('input');
+    for(var i = 0; i < inputs.length; i++) {
+        inputs[i].checked = true;
+    }
+}
+
+function inserttext(text) {
+  text = ' ' + text + ' ';
+  if ( opener.document.forms['theform'].message.createTextRange && opener.document.forms['theform'].message.caretPos) {
+    var caretPos = opener.document.forms['theform'].message.caretPos;
+    caretPos.text = caretPos.text.charAt(caretPos.text.length - 1) == ' ' ? text + ' ' : text;
+  } else {
+    opener.document.forms['theform'].message.value  += text;
+  }
+  opener.document.forms['theform'].message.focus();
+}
+
+function getElementsByClassName(oElm, strTagName, oClassNames){
+	var arrElements = (strTagName == "*" && oElm.all)? oElm.all : oElm.getElementsByTagName(strTagName);
+	var arrReturnElements = new Array();
+	var arrRegExpClassNames = new Array();
+	if(typeof oClassNames == "object"){
+		for(var i=0; i<oClassNames.length; i++){
+			arrRegExpClassNames.push(new RegExp("(^|\\s)" + oClassNames[i].replace(/\-/g, "\\-") + "(\\s|$)"));
+		}
+	}
+	else{
+		arrRegExpClassNames.push(new RegExp("(^|\\s)" + oClassNames.replace(/\-/g, "\\-") + "(\\s|$)"));
+	}
+	var oElement;
+	var bMatchesAll;
+	for(var j=0; j<arrElements.length; j++){
+		oElement = arrElements[j];
+		bMatchesAll = true;
+		for(var k=0; k<arrRegExpClassNames.length; k++){
+			if(!arrRegExpClassNames[k].test(oElement.className)){
+				bMatchesAll = false;
+				break;
+			}
+		}
+		if(bMatchesAll){
+			arrReturnElements.push(oElement);
+		}
+	}
+	return (arrReturnElements)
+}
+//]]>
+</script>
+<!--[if lt IE 9]>
+    <script>
+		  document.createElement('header');
+		  document.createElement('nav');
+		  document.createElement('section');
+		  document.createElement('article');
+		  document.createElement('aside');
+		  document.createElement('footer');
+    </script>
+	<link type="text/css" href="https://atfd.learnfirefighting.org/theme/fandango/layout_ie8.css" rel="stylesheet" />
+	<![endif]-->
+<link type="text/css" href="https://atfd.learnfirefighting.org/css/custom-theme/jquery-ui-1.8.18.custom.css" rel="stylesheet" />
+<link type="text/css" rel="stylesheet" href="https://atfd.learnfirefighting.org/fontawesome/css/fontawesome.css" />
+<link type="text/css" rel="stylesheet" href="https://atfd.learnfirefighting.org/fontawesome/css/brands.css" />
+<link type="text/css" rel="stylesheet" href="https://atfd.learnfirefighting.org/fontawesome/css/solid.css" />
+<link type="text/css" rel="stylesheet" href="https://atfd.learnfirefighting.org/css/font-awesome/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://atfd.learnfirefighting.org/css/styles.css" />
+<script type="text/javascript" src="https://atfd.learnfirefighting.org/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="https://atfd.learnfirefighting.org/js/jquery-ui-1.8.18.custom.min.js"></script>
+
+</head>
+<body class="user course-1 dir-ltr lang-en_utf8" id="user-edit">
+<div id="page">
+<div id="header" class=" clearfix"> <h1 class="headermain"></h1>
+<div class="headermenu"><div class="logininfo">You are logged in as <a href="https://atfd.learnfirefighting.org/user/view.php?id=339&amp;course=1">Joshua Bricknell</a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://atfd.learnfirefighting.org/login/logout.php?sesskey=8MVDLt1WIf"><i class="fa fa-sign-out"></i></a></div></div>
+<div id="socialmedia">
+<p id="socialicons">
+</p>
+</div>
+</div> <div class="navbar clearfix">
+<div class="breadcrumb"><h2 class="accesshide ">You are here</h2> <ul>
+<li class="first"><a onclick="this.target='_top'" href="https://atfd.learnfirefighting.org/">ATFD</a></li><li> <span class="accesshide ">/&nbsp;</span><span class="arrow sep">&#x25B6;</span> <a onclick="this.target='_top'" href="index.php?id=1">Participants</a></li><li> <span class="accesshide ">/&nbsp;</span><span class="arrow sep">&#x25B6;</span> <a onclick="this.target='_top'" href="view.php?id=339&amp;course=1">Joshua Bricknell</a></li><li> <span class="accesshide ">/&nbsp;</span><span class="arrow sep">&#x25B6;</span> Edit profile</li></ul></div>
+<div class="navbutton">&nbsp;</div>
+</div>
+
+<div id="content" class=" clearfix"><h2 class="main">Joshua Bricknell</h2>
+<div class="tabtree">
+<ul class="tabrow0">
+<li class="first"><a href="https://atfd.learnfirefighting.org/user/view.php?id=339&amp;course=1" title="Profile"><span>Profile</span></a> </li>
+<li class="onerow here selected"><a class="nolink"><span>Edit profile</span></a><div class="tabrow1 empty">&nbsp;</div>
+</li>
+<li><a href="https://atfd.learnfirefighting.org/mod/forum/user.php?id=339&amp;course=1" title="Forum posts"><span>Forum posts</span></a> </li>
+<li><a href="https://atfd.learnfirefighting.org/blog/index.php?userid=339&amp;courseid=1" title="Blog"><span>Blog</span></a> </li>
+<li class="last"><a href="https://atfd.learnfirefighting.org/course/user.php?id=1&amp;user=339&amp;mode=outline" title="Activity reports"><span>Activity reports</span></a> </li>
+</ul>
+</div><div class="clearer"> </div>
+<script type="text/javascript" src="https://atfd.learnfirefighting.org/lib/yui/yahoo/yahoo-min.js"></script>
+<script type="text/javascript" src="https://atfd.learnfirefighting.org/lib/yui/event/event-min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+
+var skipClientValidation = false;
+
+function qf_errorHandler(element, _qfMsg) {
+  div = element.parentNode;
+  if (_qfMsg != '') {
+    var errorSpan = document.getElementById('id_error_'+element.name);
+    if (!errorSpan) {
+      errorSpan = document.createElement("span");
+      errorSpan.id = 'id_error_'+element.name;
+      errorSpan.className = "error";
+      element.parentNode.insertBefore(errorSpan, element.parentNode.firstChild);
+    }
+
+    while (errorSpan.firstChild) {
+      errorSpan.removeChild(errorSpan.firstChild);
+    }
+
+    errorSpan.appendChild(document.createTextNode(_qfMsg.substring(3)));
+    errorSpan.appendChild(document.createElement("br"));
+
+    if (div.className.substr(div.className.length - 6, 6) != " error"
+        && div.className != "error") {
+      div.className += " error";
+    }
+
+    return false;
+  } else {
+    var errorSpan = document.getElementById('id_error_'+element.name);
+    if (errorSpan) {
+      errorSpan.parentNode.removeChild(errorSpan);
+    }
+
+    if (div.className.substr(div.className.length - 6, 6) == " error") {
+      div.className = div.className.substr(0, div.className.length - 6);
+    } else if (div.className == "error") {
+      div.className = "";
+    }
+
+    return true;
+  }
+}
+function validate_user_edit_form_firstname(element) {
+  var value = '';
+  var errFlag = new Array();
+  var _qfGroups = {};
+  var _qfMsg = '';
+  var frm = element.parentNode;
+  while (frm && frm.nodeName.toUpperCase() != "FORM") {
+    frm = frm.parentNode;
+  }
+  value = frm.elements['firstname'].value;
+  if (value == '' && !errFlag['firstname']) {
+    errFlag['firstname'] = true;
+    _qfMsg = _qfMsg + '\n - Required';
+  }
+
+  return qf_errorHandler(element, _qfMsg);
+}
+
+function validate_user_edit_form_lastname(element) {
+  var value = '';
+  var errFlag = new Array();
+  var _qfGroups = {};
+  var _qfMsg = '';
+  var frm = element.parentNode;
+  while (frm && frm.nodeName.toUpperCase() != "FORM") {
+    frm = frm.parentNode;
+  }
+  value = frm.elements['lastname'].value;
+  if (value == '' && !errFlag['lastname']) {
+    errFlag['lastname'] = true;
+    _qfMsg = _qfMsg + '\n - Required';
+  }
+
+  return qf_errorHandler(element, _qfMsg);
+}
+
+function validate_user_edit_form_email(element) {
+  var value = '';
+  var errFlag = new Array();
+  var _qfGroups = {};
+  var _qfMsg = '';
+  var frm = element.parentNode;
+  while (frm && frm.nodeName.toUpperCase() != "FORM") {
+    frm = frm.parentNode;
+  }
+  value = frm.elements['email'].value;
+  if (value == '' && !errFlag['email']) {
+    errFlag['email'] = true;
+    _qfMsg = _qfMsg + '\n - Required';
+  }
+
+  return qf_errorHandler(element, _qfMsg);
+}
+
+function validate_user_edit_form_city(element) {
+  var value = '';
+  var errFlag = new Array();
+  var _qfGroups = {};
+  var _qfMsg = '';
+  var frm = element.parentNode;
+  while (frm && frm.nodeName.toUpperCase() != "FORM") {
+    frm = frm.parentNode;
+  }
+  value = frm.elements['city'].value;
+  if (value == '' && !errFlag['city']) {
+    errFlag['city'] = true;
+    _qfMsg = _qfMsg + '\n - Required';
+  }
+
+  return qf_errorHandler(element, _qfMsg);
+}
+
+function validate_user_edit_form_country(element) {
+  var value = '';
+  var errFlag = new Array();
+  var _qfGroups = {};
+  var _qfMsg = '';
+  var frm = element.parentNode;
+  while (frm && frm.nodeName.toUpperCase() != "FORM") {
+    frm = frm.parentNode;
+  }
+  value = frm.elements['country'].selectedIndex == -1? '': frm.elements['country'].options[frm.elements['country'].selectedIndex].value;
+
+  if (value == '' && !errFlag['country']) {
+    errFlag['country'] = true;
+    _qfMsg = _qfMsg + '\n - Required';
+  }
+
+  return qf_errorHandler(element, _qfMsg);
+}
+
+function validate_user_edit_form(frm) {
+  if (skipClientValidation) {
+     return true;
+  }
+  var ret = true;
+
+  var frm = document.getElementById('mform1')
+  var first_focus = false;
+
+  ret = validate_user_edit_form_firstname(frm.elements['firstname']) && ret;
+  if (!ret && !first_focus) {
+    first_focus = true;
+    frm.elements['firstname'].focus();
+  }
+
+  ret = validate_user_edit_form_lastname(frm.elements['lastname']) && ret;
+  if (!ret && !first_focus) {
+    first_focus = true;
+    frm.elements['lastname'].focus();
+  }
+
+  ret = validate_user_edit_form_email(frm.elements['email']) && ret;
+  if (!ret && !first_focus) {
+    first_focus = true;
+    frm.elements['email'].focus();
+  }
+
+  ret = validate_user_edit_form_city(frm.elements['city']) && ret;
+  if (!ret && !first_focus) {
+    first_focus = true;
+    frm.elements['city'].focus();
+  }
+
+  ret = validate_user_edit_form_country(frm.elements['country']) && ret;
+  if (!ret && !first_focus) {
+    first_focus = true;
+    frm.elements['country'].focus();
+  }
+;
+  return ret;
+}
+//]]>
+</script>
+<form autocomplete="off" action="https://atfd.learnfirefighting.org/user/edit.php" method="post" accept-charset="utf-8" id="mform1" class="mform" onsubmit="try { var myValidator = validate_user_edit_form; } catch(e) { return true; } return myValidator(this);" enctype="multipart/form-data">
+<div style="display: none;"><input name="MAX_FILE_SIZE" type="hidden" value="134217728" />
+<input name="id" type="hidden" value="339" />
+<input name="course" type="hidden" value="1" />
+<input name="mform_showadvanced_last" type="hidden" value />
+<input name="sesskey" type="hidden" value="8MVDLt1WIf" />
+<input name="_qf__user_edit_form" type="hidden" value="1" />
+</div>
+<fieldset class="clearfix" id="moodle">
+<legend class="ftoggler">General</legend>
+<div class="advancedbutton"><img class="adv" title="Advanced element" alt="Advanced element" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/adv.gif" /><script id="moodle_script" type="text/javascript">
+showAdvancedInit('moodle_script', 'mform_showadvanced', 'Show Advanced', 'Hide Advanced', 'Show Advanced');
+</script><noscript><div style="display:inline"><input name="mform_showadvanced" value="Show Advanced" type="submit" /></div></noscript></div><div class="fcontainer clearfix">
+<div class="fitem required"><div class="fitemtitle"><label for="id_firstname">First name<img class="req" title="Required field" alt="Required field" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/req.gif" /> </label></div><div class="felement ftext"><input maxlength="100" size="30" name="firstname" type="text" value="Joshua" onblur="validate_user_edit_form_firstname(this)" onchange="validate_user_edit_form_firstname(this)" id="id_firstname" /></div></div>
+<div class="fitem required"><div class="fitemtitle"><label for="id_lastname">Surname<img class="req" title="Required field" alt="Required field" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/req.gif" /> </label></div><div class="felement ftext"><input maxlength="100" size="30" name="lastname" type="text" value="Bricknell" onblur="validate_user_edit_form_lastname(this)" onchange="validate_user_edit_form_lastname(this)" id="id_lastname" /></div></div>
+<div class="fitem required"><div class="fitemtitle"><label for="id_email">Email address<img class="req" title="Required field" alt="Required field" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/req.gif" /> </label></div><div class="felement ftext"><input maxlength="100" size="30" name="email" type="text" value="j_bricknell@hotmail.com" onblur="validate_user_edit_form_email(this)" onchange="validate_user_edit_form_email(this)" id="id_email" /></div></div>
+<div class="fitem"><div class="fitemtitle"><label for="id_maildisplay">Email display </label></div><div class="felement fselect"><select name="maildisplay" id="id_maildisplay">
+<option value="0">Hide my email address from everyone</option>
+<option value="1">Allow everyone to see my email address</option>
+<option value="2" selected="selected">Allow only other course members to see my email address</option>
+</select></div></div>
+<div class="fitem"><div class="fitemtitle"><label for="id_emailstop">Email activated </label></div><div class="felement fselect"><select name="emailstop" id="id_emailstop">
+<option value="0" selected="selected">This email address is enabled</option>
+<option value="1">This email address is disabled</option>
+</select></div></div>
+<div class="fitem"><div class="fitemtitle"><label for="id_emailblast">Email blast <span class="helplink"><a title="Help with Email blast (new window)" href="https://atfd.learnfirefighting.org/help.php?module=moodle&amp;file=emailblast.html&amp;forcelang=" onclick="this.target='popup'; return openpopup('/help.php?module=moodle&amp;file=emailblast.html&amp;forcelang=', 'popup', 'menubar=0,location=0,scrollbars,resizable,width=500,height=400', 0);"><i class="fa fa-lightbulb-o iconhelp" alt="Help with Email blast (new window)" style="font-size:16px;color:white;"></i> </a></span>&nbsp;</label></div><div class="felement fselect"><select name="emailblast" id="id_emailblast">
+<option value="0" selected="selected">None</option>
+<option value="1">Weekly</option>
+<option value="2">Monthly</option>
+<option value="3">Both</option>
+</select></div></div>
+<div class="fitem"><div class="fitemtitle"><label for="id_offset">Offset </label></div><div class="felement ftext"><input maxlength="40" size="10" name="offset" type="text" value="-1" id="id_offset" /></div></div>
+<div class="fitem"><div class="fitemtitle"><label for="id_fh_person_cd">FH Person CD </label></div><div class="felement ftext"><input maxlength="100" size="30" name="fh_person_cd" type="text" value id="id_fh_person_cd" /></div></div>
+<div class="fitem advanced hide"><div class="fitemtitle"><label for="id_mailformat">Email format<img class="adv" title="Advanced element" alt="Advanced element" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/adv.gif" /> </label></div><div class="felement fselect"><select name="mailformat" id="id_mailformat">
+<option value="0">Plain text format</option>
+<option value="1" selected="selected">Pretty HTML format</option>
+</select></div></div>
+<div class="fitem advanced hide"><div class="fitemtitle"><label for="id_maildigest">Email digest type<img class="adv" title="Advanced element" alt="Advanced element" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/adv.gif" /> </label></div><div class="felement fselect"><select name="maildigest" id="id_maildigest">
+<option value="0" selected="selected">No digest (single email per forum post)</option>
+<option value="1">Complete (daily email with full posts)</option>
+<option value="2">Subjects (daily email with subjects only)</option>
+</select></div></div>
+<div class="fitem advanced hide"><div class="fitemtitle"><label for="id_autosubscribe">Forum auto-subscribe<img class="adv" title="Advanced element" alt="Advanced element" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/adv.gif" /> </label></div><div class="felement fselect"><select name="autosubscribe" id="id_autosubscribe">
+<option value="1" selected="selected">Yes: when I post, subscribe me to that forum</option>
+<option value="0">No: don't automatically subscribe me to forums</option>
+</select></div></div>
+<div class="fitem advanced hide"><div class="fitemtitle"><label for="id_trackforums">Forum tracking<img class="adv" title="Advanced element" alt="Advanced element" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/adv.gif" /> </label></div><div class="felement fselect"><select name="trackforums" id="id_trackforums">
+<option value="0" selected="selected">No: don't keep track of posts I have seen</option>
+<option value="1">Yes: highlight new posts for me</option>
+</select></div></div>
+<div class="fitem advanced hide"><div class="fitemtitle"><label for="id_htmleditor">When editing text<img class="adv" title="Advanced element" alt="Advanced element" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/adv.gif" /> </label></div><div class="felement fselect"><select name="htmleditor" id="id_htmleditor">
+<option value="0">Use standard web forms</option>
+<option value="1" selected="selected">Use HTML editor (some browsers only)</option>
+</select></div></div>
+<div class="fitem advanced hide"><div class="fitemtitle"><label for="id_ajax">AJAX and Javascript<img class="adv" title="Advanced element" alt="Advanced element" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/adv.gif" /> </label></div><div class="felement fselect"><select name="ajax" id="id_ajax">
+<option value="0" selected="selected">No: use basic web features</option>
+<option value="1">Yes: use advanced web features</option>
+</select></div></div>
+<div class="fitem advanced hide"><div class="fitemtitle"><label for="id_screenreader">Screen reader<img class="adv" title="Advanced element" alt="Advanced element" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/adv.gif" /> </label></div><div class="felement fselect"><select name="screenreader" id="id_screenreader">
+<option value="0" selected="selected">No</option>
+<option value="1">Yes</option>
+</select></div></div>
+<div class="fitem required"><div class="fitemtitle"><label for="id_city">City/town<img class="req" title="Required field" alt="Required field" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/req.gif" /> </label></div><div class="felement ftext"><input maxlength="20" size="21" name="city" type="text" value="Loretto" onblur="validate_user_edit_form_city(this)" onchange="validate_user_edit_form_city(this)" id="id_city" /></div></div>
+<div class="fitem required"><div class="fitemtitle"><label for="id_country">Select a country<img class="req" title="Required field" alt="Required field" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/req.gif" /> </label></div><div class="felement fselect"><select name="country" onblur="validate_user_edit_form_country(this)" onchange="validate_user_edit_form_country(this)" id="id_country">
+<option value>Select a country...</option>
+<option value="AF">Afghanistan</option>
+<option value="AX">Åland Islands</option>
+<option value="AL">Albania</option>
+<option value="DZ">Algeria</option>
+<option value="AS">American Samoa</option>
+<option value="AD">Andorra</option>
+<option value="AO">Angola</option>
+<option value="AI">Anguilla</option>
+<option value="AQ">Antarctica</option>
+<option value="AG">Antigua And Barbuda</option>
+<option value="AR">Argentina</option>
+<option value="AM">Armenia</option>
+<option value="AW">Aruba</option>
+<option value="AU">Australia</option>
+<option value="AT">Austria</option>
+<option value="AZ">Azerbaijan</option>
+<option value="BS">Bahamas</option>
+<option value="BH">Bahrain</option>
+<option value="BD">Bangladesh</option>
+<option value="BB">Barbados</option>
+<option value="BY">Belarus</option>
+<option value="BE">Belgium</option>
+<option value="BZ">Belize</option>
+<option value="BJ">Benin</option>
+<option value="BM">Bermuda</option>
+<option value="BT">Bhutan</option>
+<option value="BO">Bolivia</option>
+<option value="BA">Bosnia And Herzegovina</option>
+<option value="BW">Botswana</option>
+<option value="BV">Bouvet Island</option>
+<option value="BR">Brazil</option>
+<option value="IO">British Indian Ocean Territory</option>
+<option value="BN">Brunei Darussalam</option>
+<option value="BG">Bulgaria</option>
+<option value="BF">Burkina Faso</option>
+<option value="BI">Burundi</option>
+<option value="KH">Cambodia</option>
+<option value="CM">Cameroon</option>
+<option value="CA" selected="selected">Canada</option>
+<option value="CV">Cape Verde</option>
+<option value="KY">Cayman Islands</option>
+<option value="CF">Central African Republic</option>
+<option value="TD">Chad</option>
+<option value="CL">Chile</option>
+<option value="CN">China</option>
+<option value="CX">Christmas Island</option>
+<option value="CC">Cocos (Keeling) Islands</option>
+<option value="CO">Colombia</option>
+<option value="KM">Comoros</option>
+<option value="CG">Congo</option>
+<option value="CD">Congo, The Democratic Republic Of The</option>
+<option value="CK">Cook Islands</option>
+<option value="CR">Costa Rica</option>
+<option value="CI">Côte D'Ivoire</option>
+<option value="HR">Croatia</option>
+<option value="CU">Cuba</option>
+<option value="CY">Cyprus</option>
+<option value="CZ">Czech Republic</option>
+<option value="DK">Denmark</option>
+<option value="DJ">Djibouti</option>
+<option value="DM">Dominica</option>
+<option value="DO">Dominican Republic</option>
+<option value="EC">Ecuador</option>
+<option value="EG">Egypt</option>
+<option value="SV">El Salvador</option>
+<option value="GQ">Equatorial Guinea</option>
+<option value="ER">Eritrea</option>
+<option value="EE">Estonia</option>
+<option value="ET">Ethiopia</option>
+<option value="FK">Falkland Islands (Malvinas)</option>
+<option value="FO">Faroe Islands</option>
+<option value="FJ">Fiji</option>
+<option value="FI">Finland</option>
+<option value="FR">France</option>
+<option value="GF">French Guiana</option>
+<option value="PF">French Polynesia</option>
+<option value="TF">French Southern Territories</option>
+<option value="GA">Gabon</option>
+<option value="GM">Gambia</option>
+<option value="GE">Georgia</option>
+<option value="DE">Germany</option>
+<option value="GH">Ghana</option>
+<option value="GI">Gibraltar</option>
+<option value="GR">Greece</option>
+<option value="GL">Greenland</option>
+<option value="GD">Grenada</option>
+<option value="GP">Guadeloupe</option>
+<option value="GU">Guam</option>
+<option value="GT">Guatemala</option>
+<option value="GG">Guernsey</option>
+<option value="GN">Guinea</option>
+<option value="GW">Guinea-Bissau</option>
+<option value="GY">Guyana</option>
+<option value="HT">Haiti</option>
+<option value="HM">Heard Island And Mcdonald Islands</option>
+<option value="VA">Holy See (Vatican City State)</option>
+<option value="HN">Honduras</option>
+<option value="HK">Hong Kong</option>
+<option value="HU">Hungary</option>
+<option value="IS">Iceland</option>
+<option value="IN">India</option>
+<option value="ID">Indonesia</option>
+<option value="IR">Iran, Islamic Republic Of</option>
+<option value="IQ">Iraq</option>
+<option value="IE">Ireland</option>
+<option value="IM">Isle Of Man</option>
+<option value="IL">Israel</option>
+<option value="IT">Italy</option>
+<option value="JM">Jamaica</option>
+<option value="JP">Japan</option>
+<option value="JE">Jersey</option>
+<option value="JO">Jordan</option>
+<option value="KZ">Kazakhstan</option>
+<option value="KE">Kenya</option>
+<option value="KI">Kiribati</option>
+<option value="KP">Korea, Democratic People's Republic Of</option>
+<option value="KR">Korea, Republic Of</option>
+<option value="KW">Kuwait</option>
+<option value="KG">Kyrgyzstan</option>
+<option value="LA">Lao People's Democratic Republic</option>
+<option value="LV">Latvia</option>
+<option value="LB">Lebanon</option>
+<option value="LS">Lesotho</option>
+<option value="LR">Liberia</option>
+<option value="LY">Libyan Arab Jamahiriya</option>
+<option value="LI">Liechtenstein</option>
+<option value="LT">Lithuania</option>
+<option value="LU">Luxembourg</option>
+<option value="MO">Macao</option>
+<option value="MK">Macedonia, The Former Yugoslav Republic Of</option>
+<option value="MG">Madagascar</option>
+<option value="MW">Malawi</option>
+<option value="MY">Malaysia</option>
+<option value="MV">Maldives</option>
+<option value="ML">Mali</option>
+<option value="MT">Malta</option>
+<option value="MH">Marshall Islands</option>
+<option value="MQ">Martinique</option>
+<option value="MR">Mauritania</option>
+<option value="MU">Mauritius</option>
+<option value="YT">Mayotte</option>
+<option value="MX">Mexico</option>
+<option value="FM">Micronesia, Federated States Of</option>
+<option value="MD">Moldova, Republic Of</option>
+<option value="MC">Monaco</option>
+<option value="MN">Mongolia</option>
+<option value="ME">Montenegro</option>
+<option value="MS">Montserrat</option>
+<option value="MA">Morocco</option>
+<option value="MZ">Mozambique</option>
+<option value="MM">Myanmar</option>
+<option value="NA">Namibia</option>
+<option value="NR">Nauru</option>
+<option value="NP">Nepal</option>
+<option value="NL">Netherlands</option>
+<option value="AN">Netherlands Antilles</option>
+<option value="NC">New Caledonia</option>
+<option value="NZ">New Zealand</option>
+<option value="NI">Nicaragua</option>
+<option value="NE">Niger</option>
+<option value="NG">Nigeria</option>
+<option value="NU">Niue</option>
+<option value="NF">Norfolk Island</option>
+<option value="MP">Northern Mariana Islands</option>
+<option value="NO">Norway</option>
+<option value="OM">Oman</option>
+<option value="PK">Pakistan</option>
+<option value="PW">Palau</option>
+<option value="PS">Palestinian Territory, Occupied</option>
+<option value="PA">Panama</option>
+<option value="PG">Papua New Guinea</option>
+<option value="PY">Paraguay</option>
+<option value="PE">Peru</option>
+<option value="PH">Philippines</option>
+<option value="PN">Pitcairn</option>
+<option value="PL">Poland</option>
+<option value="PT">Portugal</option>
+<option value="PR">Puerto Rico</option>
+<option value="QA">Qatar</option>
+<option value="RE">Réunion</option>
+<option value="RO">Romania</option>
+<option value="RU">Russian Federation</option>
+<option value="RW">Rwanda</option>
+<option value="BL">Saint Barthélemy</option>
+<option value="SH">Saint Helena</option>
+<option value="KN">Saint Kitts And Nevis</option>
+<option value="LC">Saint Lucia</option>
+<option value="MF">Saint Martin</option>
+<option value="PM">Saint Pierre And Miquelon</option>
+<option value="VC">Saint Vincent And The Grenadines</option>
+<option value="WS">Samoa</option>
+<option value="SM">San Marino</option>
+<option value="ST">Sao Tome And Principe</option>
+<option value="SA">Saudi Arabia</option>
+<option value="SN">Senegal</option>
+<option value="RS">Serbia</option>
+<option value="SC">Seychelles</option>
+<option value="SL">Sierra Leone</option>
+<option value="SG">Singapore</option>
+<option value="SK">Slovakia</option>
+<option value="SI">Slovenia</option>
+<option value="SB">Solomon Islands</option>
+<option value="SO">Somalia</option>
+<option value="ZA">South Africa</option>
+<option value="GS">South Georgia And The South Sandwich Islands</option>
+<option value="ES">Spain</option>
+<option value="LK">Sri Lanka</option>
+<option value="SD">Sudan</option>
+<option value="SR">Suriname</option>
+<option value="SJ">Svalbard And Jan Mayen</option>
+<option value="SZ">Swaziland</option>
+<option value="SE">Sweden</option>
+<option value="CH">Switzerland</option>
+<option value="SY">Syrian Arab Republic</option>
+<option value="TW">Taiwan</option>
+<option value="TJ">Tajikistan</option>
+<option value="TZ">Tanzania, United Republic Of</option>
+<option value="TH">Thailand</option>
+<option value="TL">Timor-Leste</option>
+<option value="TG">Togo</option>
+<option value="TK">Tokelau</option>
+<option value="TO">Tonga</option>
+<option value="TT">Trinidad And Tobago</option>
+<option value="TN">Tunisia</option>
+<option value="TR">Turkey</option>
+<option value="TM">Turkmenistan</option>
+<option value="TC">Turks And Caicos Islands</option>
+<option value="TV">Tuvalu</option>
+<option value="UG">Uganda</option>
+<option value="UA">Ukraine</option>
+<option value="AE">United Arab Emirates</option>
+<option value="GB">United Kingdom</option>
+<option value="US">United States</option>
+<option value="UM">United States Minor Outlying Islands</option>
+<option value="UY">Uruguay</option>
+<option value="UZ">Uzbekistan</option>
+<option value="VU">Vanuatu</option>
+<option value="VE">Venezuela</option>
+<option value="VN">Viet Nam</option>
+<option value="VG">Virgin Islands, British</option>
+<option value="VI">Virgin Islands, U.S.</option>
+<option value="WF">Wallis And Futuna</option>
+<option value="EH">Western Sahara</option>
+<option value="YE">Yemen</option>
+<option value="ZM">Zambia</option>
+<option value="ZW">Zimbabwe</option>
+</select></div></div>
+<div class="fitem"><div class="fitemtitle"><div class="fstaticlabel"><label>Timezone </label></div></div><div class="felement fstatic">UTC-5&nbsp;</div></div>
+<div class="fitem"><div class="fitemtitle"><label for="id_lang">Preferred language </label></div><div class="felement fselect"><select name="lang" id="id_lang">
+<option value="en_utf8" selected="selected">English (en)</option>
+<option value="fr_utf8">Français (fr)</option>
+</select></div></div>
+<div class="fitem"><div class="fitemtitle"><label for="id_description">Description <span class="helplink"><a title="Help with How to write text (new window)" href="https://atfd.learnfirefighting.org/help.php?module=moodle&amp;file=text.html&amp;forcelang=" onclick="this.target='popup'; return openpopup('/help.php?module=moodle&amp;file=text.html&amp;forcelang=', 'popup', 'menubar=0,location=0,scrollbars,resizable,width=500,height=400', 0);"><i class="fa fa-lightbulb-o iconhelp" alt="Help with How to write text (new window)" style="font-size:16px;color:white;"></i> </a></span>&nbsp;</label></div><div class="felement fhtmleditor"><script type="text/javascript" src="https://atfd.learnfirefighting.org/lib/editor/htmlarea/htmlarea.php"></script>
+<script type="text/javascript" src="https://atfd.learnfirefighting.org/lib/editor/htmlarea/lang/en.php?id=1"></script>
+<textarea class="form-textarea" id="id_description" name="description" rows="10" cols="45"></textarea>
+<script type="text/javascript">
+//<![CDATA[
+document.write('<span class=\"helplink\"><a title=\"Help with Editor shortcut keys (new window)\" href=\"https://atfd.learnfirefighting.org/help.php?module=moodle&amp;file=editorshortcuts.html&amp;forcelang=\"  onclick=\"this.target=\'popup\'; return openpopup(\'/help.php?module=moodle&amp;file=editorshortcuts.html&amp;forcelang=\', \'popup\', \'menubar=0,location=0,scrollbars,resizable,width=500,height=400\', 0);\"><img src=\"https://atfd.learnfirefighting.org/lib/editor/htmlarea/images/kbhelp.gif\" alt=\"Editor shortcut keys\" class=\"iconkbhelp\" /><\/a><\/span>');
+//]]>
+</script>
+<script type="text/javascript" defer="defer">
+//<![CDATA[
+
+editor_67daf92c833c41c95db874e18fcb2786 = new HTMLArea('id_description');
+var config = editor_67daf92c833c41c95db874e18fcb2786.config;
+config.pageStyle = "body { background-color: #ffffff; font-family: Trebuchet MS,Verdana,Arial,Helvetica,sans-serif; }";
+config.killWordOnPaste = true;
+config.fontname = {
+"Trebuchet":	'Trebuchet MS,Verdana,Arial,Helvetica,sans-serif',
+"Arial":	'arial,helvetica,sans-serif',
+"Courier New":	'courier new,courier,monospace',
+"Georgia":	'georgia,times new roman,times,serif',
+"Tahoma":	'tahoma,arial,helvetica,sans-serif',
+"Times New Roman":	'times new roman,times,serif',
+"Verdana":	'verdana,arial,helvetica,sans-serif',
+"Impact":	'impact',
+"Wingdings":	'wingdings'};
+editor_67daf92c833c41c95db874e18fcb2786.generate();
+//]]>
+</script>
+</div></div>
+</div></fieldset>
+<fieldset class="clearfix" id="moodle_picture">
+<legend class="ftoggler">Picture of </legend>
+<div class="advancedbutton"></div><div class="fcontainer clearfix">
+<div class="fitem"><div class="fitemtitle"><div class="fstaticlabel"><label>Current picture </label></div></div><div class="felement fstatic">None&nbsp;</div></div>
+<div class="fitem"><div class="fitemtitle"><label for="id_3e325d">Delete </label></div><div class="felement fcheckbox"><span><input name="deletepicture" type="checkbox" value="1" id="id_3e325d" /></span></div></div>
+<div class="fitem"><div class="fitemtitle"><label for="id_imagefile">New picture (Max size: 128MB) <span class="helplink"><a title="Help with How to upload a picture (new window)" href="https://atfd.learnfirefighting.org/help.php?module=moodle&amp;file=picture.html&amp;forcelang=" onclick="this.target='popup'; return openpopup('/help.php?module=moodle&amp;file=picture.html&amp;forcelang=', 'popup', 'menubar=0,location=0,scrollbars,resizable,width=500,height=400', 0);"><i class="fa fa-lightbulb-o iconhelp" alt="Help with How to upload a picture (new window)" style="font-size:16px;color:white;"></i> </a></span>&nbsp;</label></div><div class="felement ffile"><input name="imagefile" type="file" id="id_imagefile" /></div></div>
+<div class="fitem"><div class="fitemtitle"><label for="id_imagealt">Picture description </label></div><div class="felement ftext"><input maxlength="100" size="30" name="imagealt" type="text" value id="id_imagealt" /></div></div>
+</div></fieldset>
+<fieldset class="clearfix" id="moodle_interests">
+<legend class="ftoggler">Interests</legend>
+<div class="advancedbutton"></div><div class="fcontainer clearfix">
+<div class="fitem"><div class="fitemtitle"><label for="id_interests">List of interests <span class="helplink"><a title="Help with Enter your interests separated by commas (new window)" href="https://atfd.learnfirefighting.org/help.php?module=moodle&amp;file=interestslist.html&amp;forcelang=" onclick="this.target='popup'; return openpopup('/help.php?module=moodle&amp;file=interestslist.html&amp;forcelang=', 'popup', 'menubar=0,location=0,scrollbars,resizable,width=500,height=400', 0);"><i class="fa fa-lightbulb-o iconhelp" alt="Help with Enter your interests separated by commas (new window)" style="font-size:16px;color:white;"></i> </a></span>&nbsp;</label></div><div class="felement ftextarea"><textarea cols="45" rows="3" name="interests" id="id_interests"></textarea></div></div>
+</div></fieldset>
+<fieldset class="clearfix" id="moodle_optional">
+<legend class="ftoggler">Optional</legend>
+<div class="advancedbutton"><img class="adv" title="Advanced element" alt="Advanced element" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/adv.gif" /><script id="moodle_optional_script" type="text/javascript">
+showAdvancedInit('moodle_optional_script', 'mform_showadvanced', 'Show Advanced', 'Hide Advanced', 'Show Advanced');
+</script><noscript><div style="display:inline"><input name="mform_showadvanced" value="Show Advanced" type="submit" /></div></noscript></div><div class="fcontainer clearfix">
+<div class="fitem advanced hide"><div class="fitemtitle"><label for="id_url">Web page<img class="adv" title="Advanced element" alt="Advanced element" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/adv.gif" /> </label></div><div class="felement ftext"><input maxlength="255" size="50" name="url" type="text" value id="id_url" /></div></div>
+<div class="fitem advanced hide"><div class="fitemtitle"><label for="id_icq">ICQ number<img class="adv" title="Advanced element" alt="Advanced element" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/adv.gif" /> </label></div><div class="felement ftext"><input maxlength="15" size="25" name="icq" type="text" value id="id_icq" /></div></div>
+<div class="fitem advanced hide"><div class="fitemtitle"><label for="id_skype">Skype ID<img class="adv" title="Advanced element" alt="Advanced element" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/adv.gif" /> </label></div><div class="felement ftext"><input maxlength="50" size="25" name="skype" type="text" value id="id_skype" /></div></div>
+<div class="fitem advanced hide"><div class="fitemtitle"><label for="id_aim">AIM ID<img class="adv" title="Advanced element" alt="Advanced element" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/adv.gif" /> </label></div><div class="felement ftext"><input maxlength="50" size="25" name="aim" type="text" value id="id_aim" /></div></div>
+<div class="fitem advanced hide"><div class="fitemtitle"><label for="id_yahoo">Yahoo ID<img class="adv" title="Advanced element" alt="Advanced element" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/adv.gif" /> </label></div><div class="felement ftext"><input maxlength="50" size="25" name="yahoo" type="text" value id="id_yahoo" /></div></div>
+<div class="fitem advanced hide"><div class="fitemtitle"><label for="id_msn">MSN ID<img class="adv" title="Advanced element" alt="Advanced element" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/adv.gif" /> </label></div><div class="felement ftext"><input maxlength="50" size="25" name="msn" type="text" value id="id_msn" /></div></div>
+<div class="fitem advanced hide"><div class="fitemtitle"><label for="id_idnumber">ID number<img class="adv" title="Advanced element" alt="Advanced element" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/adv.gif" /> </label></div><div class="felement ftext"><input maxlength="255" size="25" name="idnumber" type="text" value id="id_idnumber" /></div></div>
+<div class="fitem advanced hide"><div class="fitemtitle"><label for="id_institution">Institution<img class="adv" title="Advanced element" alt="Advanced element" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/adv.gif" /> </label></div><div class="felement ftext"><input maxlength="40" size="25" name="institution" type="text" value id="id_institution" /></div></div>
+<div class="fitem advanced hide"><div class="fitemtitle"><label for="id_department">Department<img class="adv" title="Advanced element" alt="Advanced element" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/adv.gif" /> </label></div><div class="felement ftext"><input maxlength="30" size="25" name="department" type="text" value id="id_department" /></div></div>
+<div class="fitem advanced hide"><div class="fitemtitle"><label for="id_phone1">Phone<img class="adv" title="Advanced element" alt="Advanced element" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/adv.gif" /> </label></div><div class="felement ftext"><input maxlength="20" size="25" name="phone1" type="text" value id="id_phone1" /></div></div>
+<div class="fitem advanced hide"><div class="fitemtitle"><label for="id_phone2">Mobile Phone<img class="adv" title="Advanced element" alt="Advanced element" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/adv.gif" /> </label></div><div class="felement ftext"><input maxlength="20" size="25" name="phone2" type="text" value id="id_phone2" /></div></div>
+<div class="fitem advanced hide"><div class="fitemtitle"><label for="id_address">Address<img class="adv" title="Advanced element" alt="Advanced element" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/adv.gif" /> </label></div><div class="felement ftext"><input maxlength="70" size="25" name="address" type="text" value id="id_address" /></div></div>
+</div></fieldset>
+<fieldset class="clearfix" id="category_1">
+<legend class="ftoggler">Fire Department</legend>
+<div class="advancedbutton"></div><div class="fcontainer clearfix">
+<div class="fitem"><div class="fitemtitle"><label for="id_profile_field_LinkedIn">LinkedIn </label></div><div class="felement ftext"><input maxlength="100" size="30" name="profile_field_LinkedIn" type="text" value id="id_profile_field_LinkedIn" /></div></div>
+<div class="fitem"><div class="fitemtitle"><label for="id_profile_field_ID">ID Number </label></div><div class="felement ftext"><input maxlength="3" size="3" name="profile_field_ID" type="text" value="221" id="id_profile_field_ID" /></div></div>
+<div class="fitem"><div class="fitemtitle"><label for="id_profile_field_StudentNumber">OFC Student Number </label></div><div class="felement ftext"><input maxlength="12" size="7" name="profile_field_StudentNumber" type="text" value id="id_profile_field_StudentNumber" /></div></div>
+<div class="fitem"><div class="fitemtitle"><label for="id_profile_field_grpInstructorLVL">Instructor Level </label></div><div class="felement fselect"><select name="profile_field_grpInstructorLVL" id="id_profile_field_grpInstructorLVL">
+<option value="0" selected="selected"> </option>
+<option value="1">Firefighter Instructor</option>
+<option value="2">Trainer Facilitator</option>
+<option value="3">Trainer Facilitator/AI</option>
+<option value="4">NFPA Instructor I</option>
+<option value="5">NFPA Instructor II</option>
+<option value="6">NFPA Instructor III</option>
+<option value="7">NFPA Instructor I / Eval I</option>
+<option value="8">NFPA Instructor II / Eval I</option>
+<option value="9">NFPA Instructor II / Eval II / Instructor III</option>
+<option value="10">NFPA Instructor III / Eval II</option>
+</select></div></div>
+<div class="fitem"><div class="fitemtitle"><label for="id_profile_field_platoon">Platoon </label></div><div class="felement fselect"><select name="profile_field_platoon" id="id_profile_field_platoon">
+<option value="0"></option>
+<option value="1">A</option>
+<option value="2" selected="selected">B</option>
+<option value="3">C</option>
+<option value="4"></option>
+</select></div></div>
+</div></fieldset>
+<fieldset class="clearfix" id="category_4">
+<legend class="ftoggler">Site Wide Group</legend>
+<div class="advancedbutton"></div><div class="fcontainer clearfix">
+<div class="fitem"><div class="fitemtitle"><label for="id_profile_field_Rank">Rank </label></div><div class="felement fselect"><select name="profile_field_Rank" id="id_profile_field_Rank">
+<option value="0"> </option>
+<option value="1">Stillwater Employee</option>
+<option value="2" selected="selected">Recruit Firefighter</option>
+<option value="3">Recruit Candidate </option>
+<option value="4">Public Education</option>
+<option value="5">Firefighter</option>
+<option value="6">Acting Captain</option>
+<option value="7">Captain</option>
+<option value="8">Training Officer</option>
+<option value="9">Assistant District Chief</option>
+<option value="10">District Chief</option>
+<option value="11">Content Provider</option>
+<option value="12">Deputy Chief (Acting)/FPO</option>
+<option value="13">Deputy Chief</option>
+<option value="14">Fire Chief</option>
+<option value="15">Fire Prevention Officer</option>
+<option value="16">Fire Inspector</option>
+<option value="17">Lieutenant</option>
+</select></div></div>
+<div class="fitem"><div class="fitemtitle"><label for="id_profile_field_RC">2019 Recruit Group </label></div><div class="felement fselect"><select name="profile_field_RC" id="id_profile_field_RC">
+<option value="0"> </option>
+<option value="1">2015 Recruit Group</option>
+<option value="2">2016 Recruit Group</option>
+<option value="3" selected="selected">2017 Recruit Group</option>
+<option value="4">2019 Recruit Group</option>
+<option value="5"></option>
+</select></div></div>
+<div class="fitem"><div class="fitemtitle"><label for="id_profile_field_OfficerorFirefighter">Officer </label></div><div class="felement fselect"><select name="profile_field_OfficerorFirefighter" id="id_profile_field_OfficerorFirefighter">
+<option value="0"> </option>
+<option value="1">Officer</option>
+<option value="2" selected="selected">Firefighter</option>
+</select></div></div>
+<div class="fitem"><div class="fitemtitle"><label for="id_profile_field_Station2">Station </label></div><div class="felement fselect"><select name="profile_field_Station2" id="id_profile_field_Station2">
+<option value="0"> </option>
+<option value="1">HQ</option>
+<option value="2">1 - Everett</option>
+<option value="3" selected="selected">2- Loretto</option>
+<option value="4"></option>
+</select></div></div>
+</div></fieldset>
+<fieldset class="hidden"><div>
+<div class="fitem"><div class="fitemtitle"><label for="id_submitbutton"> </label></div><div class="felement fsubmit"><input name="submitbutton" value="Update profile" type="submit" id="id_submitbutton" /></div></div>
+<div class="fdescription required">There are required fields in this form marked<img alt="Required field" src="https://atfd.learnfirefighting.org/pix/smartpix.php/fandango/req.gif" />.</div>
+</div></fieldset>
+</form>
+<script type="text/javascript">
+//<![CDATA[
+var mform1items = Array();
+lockoptionsallsetup('mform1');
+//]]>
+</script>
+</div><div id="footer"><p class="helplink"></p><div class="logininfo">You are logged in as <a href="https://atfd.learnfirefighting.org/user/view.php?id=339&amp;course=1">Joshua Bricknell</a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://atfd.learnfirefighting.org/login/logout.php?sesskey=8MVDLt1WIf"><i class="fa fa-sign-out"></i></a></div></div></div>
+<script>
+function callmycourse(frontsection){
+        $('#loading').show();
+        $.ajax({
+                url: "https://atfd.learnfirefighting.org/getcourses.php",
+                type: "post",
+                data: { front_section: frontsection} ,
+                success: function(data){
+
+                        $('.agendalist').html(data);
+                        $('#loading').hide();
+                }
+        });
+}
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-46760165-7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-46760165-7');
+</script>
+</body>
+</html>
